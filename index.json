@@ -5327,7 +5327,7 @@
     },
     {
       "fullPath": "presets/4.5/modes/schome1fpv-modes.txt",
-      "hash": "608446cff984428bdf9ff3468aa04cda43d56362a2c83718e7058c85c4a6d04e",
+      "hash": "35d1c080e251d7e5c0a7aacdaa8f37a79f0343bc24b634aa28b9a92f7cd3de74",
       "title": "Schome1FPV - Modes",
       "firmware_version": [
         "4.5"
@@ -5993,7 +5993,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/schome1fpv-tune-ubr75.txt",
-      "hash": "0f6d57715bed2d4c70a07893834b3ba2558b8bf7733125abac1ff2ee620a995d",
+      "hash": "69c855d5a134c221b873b9da95545aaaaa09bbb1603bf654b74ac155febbb8ca",
       "title": "Schome1FPV - UBR75 TUNE",
       "firmware_version": [
         "4.5"
