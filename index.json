@@ -512,7 +512,6 @@
       "ubr",
       "ubr112lp",
       "ubr128lp",
-      "ubr75",
       "uir",
       "uir75",
       "ultra",
@@ -5348,8 +5347,8 @@
     },
     {
       "fullPath": "presets/4.5/osd/schome1fpv-osd-ubr75.txt",
-      "hash": "330699e7d2e6c0b1c721035f09ddeb11bc4416d2d0bbfc4c5e50046dc6987bc3",
-      "title": "Schome1FPV - UBR75 HD OSD",
+      "hash": "1ccc5fab73ea112d88dea60b5adec8ceec943a30367ca5dcc3fa2e04558477db",
+      "title": "Schome1FPV - UIR75 HD OSD",
       "firmware_version": [
         "4.5"
       ],
@@ -5358,7 +5357,8 @@
       "keywords": [
         "hdzero",
         "hd",
-        "osd"
+        "osd",
+        "uir"
       ],
       "author": "Schome1FPV (Mike Schommer)",
       "priority": 0
@@ -5993,16 +5993,16 @@
     },
     {
       "fullPath": "presets/4.5/tune/schome1fpv-tune-ubr75.txt",
-      "hash": "ecd93c98ffcac20c43d018154909e43b1a128f5654206b6579a0b6ad56bb7eb4",
-      "title": "Schome1FPV - UBR75 TUNE",
+      "hash": "e3e8cedcc632912be04367d38bd8f10bc2f91bed00cbd036ff6fe8dbceb3d5c2",
+      "title": "Schome1FPV - UIR75 TUNE",
       "firmware_version": [
         "4.5"
       ],
       "category": "TUNE",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "ubr",
-        "ubr75",
+        "uir",
+        "uir75",
         "40mm",
         "whoop"
       ],

@@ -1,10 +1,10 @@
-#$ TITLE: Schome1FPV - UBR75 TUNE
+#$ TITLE: Schome1FPV - UIR75 TUNE
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: ubr, ubr75, 40mm, whoop
+#$ KEYWORDS: uir, uir75, 40mm, whoop
 #$ AUTHOR: Schome1FPV (Mike Schommer)
-#$ DESCRIPTION: Presets for the UBR75 drone tune.
+#$ DESCRIPTION: Presets for the UIR75 drone tune.
 
 # dynamic idle = (15000 / <prop size in inches>) / 100)
 set dyn_idle_min_rpm = 95

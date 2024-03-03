@@ -1,8 +1,8 @@
-#$ TITLE: Schome1FPV - UBR75 HD OSD
+#$ TITLE: Schome1FPV - UIR75 HD OSD
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OSD
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: hdzero, hd, osd
+#$ KEYWORDS: hdzero, hd, osd, uir
 #$ AUTHOR: Schome1FPV (Mike Schommer)
 #$ DESCRIPTION: Presets for HD OSD.  This preset includes the following presets (Schome1FPV - HD OSD).
 #$ INCLUDE: presets/4.5/osd/schome1fpv-osd.txt
