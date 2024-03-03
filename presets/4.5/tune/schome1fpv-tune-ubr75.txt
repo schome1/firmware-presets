@@ -124,8 +124,6 @@ set p_yaw = 56
 set i_yaw = 100
 set f_yaw = 216
 
-set angle_level_strength = 100
-
 set d_min_roll = 54
 set d_min_pitch = 61
 
