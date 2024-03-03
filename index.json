@@ -6333,6 +6333,23 @@
       "author": "sugarK",
       "force_options_review": true,
       "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.5/vtx/schome1fpv-hdzero.txt",
+      "hash": "64072b7947d069751c7af6e516d6e5624477647a77ba8b325b204d8a0b4729ea",
+      "title": "Schome1FPV - HDZero",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "hdzero",
+        "whoop",
+        "whoop lite"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 1000000
     }
   ]
 }

@@ -1,0 +1,74 @@
+#$ TITLE: Schome1FPV - HDZero
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: VTX
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: hdzero, whoop, whoop lite
+#$ AUTHOR: Schome1FPV (Mike Schommer)
+
+#$ DESCRIPTION: Presets for HDZero Whoop Lite VTX
+
+vtxtable bands 0
+vtxtable channels 0
+vtxtable powerlevels 0
+vtxtable powervalues
+vtxtable powerlabels
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 0 0 0 0 0 0 0 0
+vtxtable band 2 BOSCAM_B B FACTORY 0 0 0 0 0 0 0 0
+vtxtable band 3 BOSCAM_E E FACTORY 0 0 0 0 0 0 0 0
+vtxtable band 4 FATSHARK F FACTORY 0 5760 0 5800 0 0 0 0
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 IMD6 I CUSTOM 0 0 0 0 0 0 0 0
+vtxtable powerlevels 3
+vtxtable powervalues 14 23 0
+vtxtable powerlabels 25 200 0
+
+set osd_displayport_device = MSP
+set vcd_video_system = HD
+set vtx_power = 3
+
+#$ OPTION_GROUP BEGIN: Choose ONE VTX Power Channel
+    #$ OPTION BEGIN (UNCHECKED): AUX 2
+        vtx 0 1 0 0 3 900 1300
+        vtx 1 1 0 0 1 1300 1700
+        vtx 2 1 0 0 2 1700 2100
+        rxfail 5 s 1000        
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): AUX 3
+        vtx 0 2 0 0 3 900 1300
+        vtx 1 2 0 0 1 1300 1700
+        vtx 2 2 0 0 2 1700 2100
+        rxfail 6 s 1000        
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): AUX 4
+        vtx 0 3 0 0 3 900 1300
+        vtx 1 3 0 0 1 1300 1700
+        vtx 2 3 0 0 2 1700 2100
+        rxfail 7 s 1000        
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): AUX 5
+        vtx 0 4 0 0 3 900 1300
+        vtx 1 4 0 0 1 1300 1700
+        vtx 2 4 0 0 2 1700 2100
+        rxfail 8 s 1000        
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): AUX 6
+        vtx 0 5 0 0 3 900 1300
+        vtx 1 5 0 0 1 1300 1700
+        vtx 2 5 0 0 2 1700 2100
+        rxfail 9 s 1000        
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): AUX 7
+        vtx 0 6 0 0 3 900 1300
+        vtx 1 6 0 0 1 1300 1700
+        vtx 2 6 0 0 2 1700 2100
+        rxfail 10 s 1000        
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): AUX 8
+        vtx 0 7 0 0 3 900 1300
+        vtx 1 7 0 0 1 1300 1700
+        vtx 2 7 0 0 2 1700 2100
+        rxfail 11 s 1000        
+    #$ OPTION END
+#$ OPTION_GROUP END
