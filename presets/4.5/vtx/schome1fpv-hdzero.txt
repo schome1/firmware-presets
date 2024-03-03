@@ -36,38 +36,38 @@ set vtx_power = 3
     #$ OPTION BEGIN (UNCHECKED): E
         set vtx_band = 3
     #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): F
+    #$ OPTION BEGIN (UNCHECKED): F
         set vtx_band = 4
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): R
+    #$ OPTION BEGIN (CHECKED): R
         set vtx_band = 5
     #$ OPTION END
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Channel
-    #$ OPTION BEGIN (UNCHECKED): 1
-        set vtx_band = 1
+    #$ OPTION BEGIN (CHECKED): 1
+        set vtx_channel = 1
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 2
-        set vtx_band = 2
+        set vtx_channel = 2
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 3
-        set vtx_band = 3
+        set vtx_channel = 3
     #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): 4
-        set vtx_band = 4
+    #$ OPTION BEGIN (UNCHECKED): 4
+        set vtx_channel = 4
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 5
-        set vtx_band = 5
+        set vtx_channel = 5
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 6
-        set vtx_band = 6
+        set vtx_channel = 6
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 7
-        set vtx_band = 7
+        set vtx_channel = 7
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): 8
-        set vtx_band = 8
+        set vtx_channel = 8
     #$ OPTION END
 #$ OPTION_GROUP END
 
