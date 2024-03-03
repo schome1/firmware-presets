@@ -1,4 +1,4 @@
-#$ TITLE: Schome1FPV - Modes
+#$ TITLE: Schome1FPV - ExpressLRS 500hz Race
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: RC_LINK
 #$ STATUS: EXPERIMENTAL
