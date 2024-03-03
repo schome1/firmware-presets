@@ -4,8 +4,13 @@
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: ubr, ubr75, 40mm, whoop
 #$ AUTHOR: Schome1FPV (Mike Schommer)
-
 #$ DESCRIPTION: Presets for the UBR75 drone tune.
+
+# feature
+feature -RSSI_ADC
+feature -AIRMODE
+feature MOTOR_STOP
+feature OSD
 
 # dynamic idle = (15000 / <prop size in inches>) / 100)
 set dyn_idle_min_rpm = 95
