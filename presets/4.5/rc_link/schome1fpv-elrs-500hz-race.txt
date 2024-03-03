@@ -1,0 +1,29 @@
+#$ TITLE: Schome1FPV - Modes
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: RC_LINK
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: expresslrs, elrs, 500hz, race, rc_smoothing
+#$ AUTHOR: Schome1FPV (Mike Schommer)
+
+#$ DESCRIPTION: Presets for ExpressLRS RXs running at 500hz with Race settings.
+
+#$ OPTION_GROUP BEGIN: ELRS RX Connection (choose one)
+    #$ OPTION BEGIN (CHECKED): Serial, external RX
+        feature RX_SERIAL
+        feature -RX_SPI
+        set serialrx_provider = CRSF
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): SPI, integrated RX
+        # feature
+        feature -RX_SERIAL
+        feature RX_SPI
+        set rx_spi_protocol = EXPRESSLRS
+    #$ OPTION END
+#$ OPTION_GROUP END    
+
+set rc_smoothing_auto_factor = 25
+set rc_smoothing_auto_factor_throttle = 25
+profileset set feedforward_averaging = 2_POINT
+profileset set feedforward_smooth_factor = 65
+profileset set feedforward_jitter_factor = 3
+profileset set feedforward_boost = 18

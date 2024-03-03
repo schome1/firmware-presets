@@ -322,6 +322,7 @@
       "EVO",
       "expert",
       "express",
+      "expresslrs",
       "Extreme",
       "feisar",
       "filter",
@@ -507,6 +508,11 @@
       "twig",
       "tx5m.1",
       "tx800",
+      "ubr",
+      "ubr112lp",
+      "ubr128lp",
+      "uir",
+      "uir75",
       "ultra",
       "ultra 1000",
       "ultralite",
@@ -536,8 +542,7 @@
       "wtfos",
       "youtube",
       "zoe",
-      "zoeFPV",
-      "zorro"
+      "zoeFPV"
     ]
   },
   "presets": [
@@ -5319,6 +5324,27 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/modes/schome1fpv-modes.txt",
+      "hash": "0a8702a4da5c61907704cce0145bcc7dbedc41000e61fa3b2a39b381522d8a70",
+      "title": "Schome1FPV - Modes",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "MODES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "mode",
+        "expresslrs",
+        "uir",
+        "uir75",
+        "ubr",
+        "ubr112lp",
+        "ubr128lp"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/100-euro-fpv-tune.txt",
       "hash": "3f0256b75809d56d7ec528481ed302ac1d756c9c08bee71b41e213849924b953",
       "title": "100-EURO-FPV",
@@ -5425,22 +5451,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/other/schome1fpv-modes.txt",
-      "hash": "ea730f75e21e883d3b6b1220198168b4b61e9834430762e122a03bb5980f7ddc",
-      "title": "Schome1FPV - Modes",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "MODES",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "mode",
-        "zorro"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/other/zoefpv.txt",
       "hash": "78e6a4d9c57554d080044f446552ed5ab60fe28dfe4167099fcb2f1df1e66555",
       "title": "ZoeFPV 3d tuneup",
@@ -5488,6 +5498,25 @@
       ],
       "author": "ZoeFPV",
       "priority": 10000
+    },
+    {
+      "fullPath": "presets/4.5/rc_link/schome1fpv-elrs-500hz-race.txt",
+      "hash": "fb768bdad8faa580380d2a59468019e43e916c816ad6b6f6a4d081498643721b",
+      "title": "Schome1FPV - Modes",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "RC_LINK",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "expresslrs",
+        "elrs",
+        "500hz",
+        "race",
+        "rc_smoothing"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 10000000000
     },
     {
       "fullPath": "presets/4.5/tune/Street_League_LeadFingers.txt",
