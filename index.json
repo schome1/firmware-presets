@@ -5345,6 +5345,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/osd/schome1fpv-osd.txt",
+      "hash": "2159196b907fcabf0ab46858b767123533798df15984f29f5d2d4d277fcfaf61",
+      "title": "Schome1FPV - HD OSD",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OSD",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "hdzero",
+        "hd",
+        "osd"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/100-euro-fpv-tune.txt",
       "hash": "3f0256b75809d56d7ec528481ed302ac1d756c9c08bee71b41e213849924b953",
       "title": "100-EURO-FPV",
