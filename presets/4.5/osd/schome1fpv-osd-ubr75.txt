@@ -1,0 +1,84 @@
+#$ TITLE: Schome1FPV - UBR75 HD OSD
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OSD
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: hdzero, hd, osd
+#$ AUTHOR: Schome1FPV (Mike Schommer)
+#$ DESCRIPTION: Presets for HD OSD.
+#$ INCLUDE: presets/4.5/osd/schome1fpv-osd.txt
+
+set vbat_scale  = 112
+set ibata_scale = 170
+
+set vbat_max_cell_voltage = 445
+set vbat_min_cell_voltage = 315
+set report_cell_voltage = ON
+
+# OSD ESC RPM Alarm - shows ESC1234 with an R in place of a the motor number that is jammed";
+set osd_esc_rpm_alarm = 1000
+
+set osd_logo_on_arming = OFF
+#$ OPTION_GROUP BEGIN: Choose ONE Show OSD Logo
+    #$ OPTION BEGIN (UNCHECKED): Never
+        set osd_logo_on_arming = OFF
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): First Arming Only
+        set osd_logo_on_arming = FIRST_ARMING
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Every Arming
+        set osd_logo_on_arming = ON
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set osd_logo_on_arming_duration = 30
+#$ OPTION_GROUP BEGIN: Choose ONE Logo Display Duration
+    #$ OPTION BEGIN (UNCHECKED): 1 second
+        set osd_logo_on_arming_duration = 10
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2 seconds
+        set osd_logo_on_arming_duration = 20
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): 3 seconds
+        set osd_logo_on_arming_duration = 30
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 4 seconds
+        set osd_logo_on_arming_duration = 40
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 5 seconds
+        set osd_logo_on_arming_duration = 50
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set osd_units = IMPERIAL
+#$ OPTION_GROUP BEGIN: Choose ONE OSD Units
+    #$ OPTION BEGIN (CHECKED): Imperial
+        set osd_units = IMPERIAL
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Metric
+        set osd_units = METRIC
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set bat_capacity = 300
+# osd capacity alarm = <battery capacity mah> * 0.70
+set osd_cap_alarm = 210
+#$ OPTION_GROUP BEGIN: Choose ONE Battery Capacity
+    #$ OPTION BEGIN (CHECKED): 300 mAh
+        set bat_capacity = 300
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 210
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 350 mAh
+        set bat_capacity = 350
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 245
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 380 mAh
+        set bat_capacity = 380
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 266
+    #$ OPTION END
+#$ OPTION_GROUP END

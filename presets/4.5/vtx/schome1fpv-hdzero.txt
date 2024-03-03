@@ -24,9 +24,52 @@ vtxtable powerlevels 3
 vtxtable powervalues 14 23 0
 vtxtable powerlabels 25 200 0
 
-set osd_displayport_device = MSP
-set vcd_video_system = HD
 set vtx_power = 3
+
+#$ OPTION_GROUP BEGIN: Choose ONE VTX Band
+    #$ OPTION BEGIN (UNCHECKED): A
+        set vtx_band = 1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): B
+        set vtx_band = 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): E
+        set vtx_band = 3
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): F
+        set vtx_band = 4
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): R
+        set vtx_band = 5
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Choose ONE VTX Channel
+    #$ OPTION BEGIN (UNCHECKED): 1
+        set vtx_band = 1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2
+        set vtx_band = 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 3
+        set vtx_band = 3
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): 4
+        set vtx_band = 4
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 5
+        set vtx_band = 5
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 6
+        set vtx_band = 6
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 7
+        set vtx_band = 7
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 8
+        set vtx_band = 8
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Power Channel
     #$ OPTION BEGIN (UNCHECKED): AUX 2

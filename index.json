@@ -228,6 +228,7 @@
       "3S",
       "4 inch",
       "4\"",
+      "40mm",
       "4in",
       "4S",
       "5 In",
@@ -511,6 +512,7 @@
       "ubr",
       "ubr112lp",
       "ubr128lp",
+      "ubr75",
       "uir",
       "uir75",
       "ultra",
@@ -5345,8 +5347,25 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/osd/schome1fpv-osd-ubr75.txt",
+      "hash": "1c7a3ae6a3bf6b07176f14e60837a168b510861981703b06516ce617cac48729",
+      "title": "Schome1FPV - UBR75 HD OSD",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OSD",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "hdzero",
+        "hd",
+        "osd"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/osd/schome1fpv-osd.txt",
-      "hash": "2159196b907fcabf0ab46858b767123533798df15984f29f5d2d4d277fcfaf61",
+      "hash": "18b732fbfd466581bd34c421539e67f85afd3dc4d93d39ca591bfb09c4a4a089",
       "title": "Schome1FPV - HD OSD",
       "firmware_version": [
         "4.5"
@@ -5973,6 +5992,24 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/tune/schome1fpv-tune-ubr75.txt",
+      "hash": "42c541f1c191695762d2175352a43d60a06f02e1e2c900fc7beb1a76c7e2b618",
+      "title": "Schome1FPV - UBR75 TUNE",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "ubr",
+        "ubr75",
+        "40mm",
+        "whoop"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_3_4_Inch_EasyTune.txt",
       "hash": "a74e9b3e4d95ea46153973ab9ebff69804b9ec57a763ba7159be20b501cef229",
       "title": "SupaflyFPV Freestyle 3/4 Inch",
@@ -6353,7 +6390,7 @@
     },
     {
       "fullPath": "presets/4.5/vtx/schome1fpv-hdzero.txt",
-      "hash": "64072b7947d069751c7af6e516d6e5624477647a77ba8b325b204d8a0b4729ea",
+      "hash": "2106c2f69035950a7fc0c0ac7c193e21b352e85e906f5a222632c5e8eff01ba1",
       "title": "Schome1FPV - HDZero",
       "firmware_version": [
         "4.5"
