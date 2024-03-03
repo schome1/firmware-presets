@@ -4,7 +4,6 @@
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: hdzero, whoop, whoop lite
 #$ AUTHOR: Schome1FPV (Mike Schommer)
-
 #$ DESCRIPTION: Presets for HDZero Whoop Lite VTX
 
 vtxtable bands 0

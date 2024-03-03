@@ -7,19 +7,15 @@
 
 #$ DESCRIPTION: Meant for ExpressLRS AUX channel mapping, where AUX 1 must be a 2-position switch for ARM, these are the modes I've found that I use the most.  Choosing this preset will setup these modes in Betaflight so you do not have to select them.  You will still be required to map AUX 2+ to coincide with your radio Aux ports.
 
-# feature
-feature -RSSI_ADC
-feature -AIRMODE
-feature MOTOR_STOP
-feature OSD
-
 # mode defaults
+# https://betaflight.com/docs/development/Modes
 aux 0 0 0 900 1500
 aux 1 35 1 1500 2100
 aux 2 28 2 1500 2100
 aux 3 1 3 1500 2100
 aux 4 26 5 1300 1700
 aux 5 31 5 1700 2100
+aux 6 13 7 1500 2100
 
 # change arm low/high position
 #$ OPTION_GROUP BEGIN: Choose ONE

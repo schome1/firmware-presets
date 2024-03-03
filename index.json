@@ -325,11 +325,13 @@
       "express",
       "expresslrs",
       "Extreme",
+      "f405",
       "feisar",
       "filter",
       "filtering",
       "filters",
       "five33",
+      "flywoo",
       "Foxeer",
       "fport",
       "fpv.wtf",
@@ -348,6 +350,7 @@
       "geprc",
       "ghost",
       "GHST",
+      "goku",
       "GoPro",
       "GPS",
       "GPS_Rescue",
@@ -522,6 +525,7 @@
       "upside down",
       "utility",
       "vanover",
+      "versatile",
       "very",
       "very clean",
       "very noisy",
@@ -5326,7 +5330,7 @@
     },
     {
       "fullPath": "presets/4.5/modes/schome1fpv-modes.txt",
-      "hash": "35d1c080e251d7e5c0a7aacdaa8f37a79f0343bc24b634aa28b9a92f7cd3de74",
+      "hash": "35a958d3964c6188cbe2e4747538876f6ee48251aa4b39360287a99c9f8ad459",
       "title": "Schome1FPV - Modes",
       "firmware_version": [
         "4.5"
@@ -5346,7 +5350,7 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/osd/schome1fpv-osd-ubr75.txt",
+      "fullPath": "presets/4.5/osd/schome1fpv-osd-uir75.txt",
       "hash": "1ccc5fab73ea112d88dea60b5adec8ceec943a30367ca5dcc3fa2e04558477db",
       "title": "Schome1FPV - UIR75 HD OSD",
       "firmware_version": [
@@ -5487,6 +5491,42 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/schome1fpv-fc-default-settings-flywoo-goku-versatile-f405.txt",
+      "hash": "9813227623a5ff451124f5edc2b8009a003093936463bf9a015d2fcfe220b6ae",
+      "title": "Schome1FPV - FLYWOO GOKU VERSATILE F405 DEFAULTS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "flywoo",
+        "goku",
+        "versatile",
+        "f405"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/schome1fpv-fc-flywoo-goku-versatile-f405.txt",
+      "hash": "094a6744ee4221b549677a48290c8f3844be726d647a6f0a3a73f6b6c90b3cd0",
+      "title": "Schome1FPV - FLYWOO GOKU VERSATILE F405",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "flywoo",
+        "goku",
+        "versatile",
+        "f405"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/zoefpv.txt",
       "hash": "78e6a4d9c57554d080044f446552ed5ab60fe28dfe4167099fcb2f1df1e66555",
       "title": "ZoeFPV 3d tuneup",
@@ -5537,7 +5577,7 @@
     },
     {
       "fullPath": "presets/4.5/rc_link/schome1fpv-elrs-500hz-race.txt",
-      "hash": "a0b3e3c05ea067bb51331604985ae1fee93b80aeb6cfe37948d24aca946f4d02",
+      "hash": "48b81594a919fe0ed6ba9134c4f4071aa06988fd17f80d7d528d44ed99c9bdeb",
       "title": "Schome1FPV - ExpressLRS 500hz Race",
       "firmware_version": [
         "4.5"
@@ -5992,8 +6032,8 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.5/tune/schome1fpv-tune-ubr75.txt",
-      "hash": "e3e8cedcc632912be04367d38bd8f10bc2f91bed00cbd036ff6fe8dbceb3d5c2",
+      "fullPath": "presets/4.5/tune/schome1fpv-uir75-tune.txt",
+      "hash": "99a2076a3ad46205258638dde66ed0ba19f67f76287594386e1c9b63284d591c",
       "title": "Schome1FPV - UIR75 TUNE",
       "firmware_version": [
         "4.5"
@@ -6390,7 +6430,7 @@
     },
     {
       "fullPath": "presets/4.5/vtx/schome1fpv-hdzero.txt",
-      "hash": "e9cd6af5b64e9e24eecaa3a53ab9468dcbfbd09e0fcf0bf4eef8af57a1e810e5",
+      "hash": "1447d1a41dae77cf0f17af892b1cebd9df77e5b2b70b54d50c7fa5bed07c5a15",
       "title": "Schome1FPV - HDZero",
       "firmware_version": [
         "4.5"

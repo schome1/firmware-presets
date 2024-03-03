@@ -1,0 +1,235 @@
+#$ TITLE: Schome1FPV - UIR75 TUNE
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: uir, uir75, 40mm, whoop
+#$ AUTHOR: Schome1FPV (Mike Schommer)
+#$ DESCRIPTION: Presets for the UIR75 drone tune.
+#$ INCLUDE: presets/4.5/other/schome1fpv-fc-flywoo-goku-versatile-f405.txt
+#$ INCLUDE: presets/4.5/osd/schome1fpv-osd.txt
+#$ INCLUDE: presets/4.5/vtx/schome1fpv-hdzero.txt
+
+# master
+
+
+# dynamic idle = (15000 / <prop size in inches>) / 100)
+set dyn_idle_min_rpm = 95
+
+# thrust linear = (<esc pwm frequency> >= 96 ? 40 : (userValue <= 24 ? 0 : 20));
+set thrust_linear = 40;
+
+set acc_hardware = AUTO
+
+set small_angle = 180
+
+set simplified_gyro_filter_multiplier = 60
+
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set yaw_motors_reversed = ON
+set dshot_bidir = ON
+set min_check = 1020
+set max_check = 2000
+
+set acc_lpf_hz = 10
+
+set dyn_notch_count = 2
+set dyn_notch_max_hz = 700
+
+set gyro_lpf1_static_hz = 150
+set gyro_lpf2_static_hz = 300
+set gyro_lpf1_dyn_min_hz = 150
+set gyro_lpf1_dyn_max_hz = 300
+
+set pid_process_denom = 4
+
+set rpm_filter_harmonics = 2
+
+set debug_mode = GYRO_SCALED
+set blackbox_sample_rate = 1/2
+
+set crash_recovery = OFF
+
+set dterm_lpf1_dyn_min_hz = 90
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_static_hz = 90
+set dterm_lpf2_static_hz = 180
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 90
+set iterm_relax_cutoff = 5
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 125
+
+set p_pitch = 65
+set i_pitch = 116
+set d_pitch = 61
+set f_pitch = 247
+set p_roll = 56
+set i_roll = 100
+set d_roll = 54
+set f_roll = 216
+set p_yaw = 56
+set i_yaw = 100
+set f_yaw = 216
+
+set d_min_roll = 54
+set d_min_pitch = 61
+
+set simplified_master_multiplier = 180
+set simplified_pi_gain = 70
+set simplified_dmax_gain = 0
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter_multiplier = 120
+
+set roll_rc_rate = 40
+set pitch_rc_rate = 30
+set yaw_rc_rate = 40
+set roll_srate = 40
+set pitch_srate = 30
+set yaw_srate = 40
+
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+
+#$ OPTION BEGIN (CHECKED): Use Crash Recovery
+    set crash_recovery = ON
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN: Choose ONE Throttle Limit
+    #$ OPTION BEGIN (CHECKED): 100%
+        set throttle_limit_type = OFF
+        set throttle_limit_percent = 100
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 95%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 95
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 90%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 90
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 85%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 85
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 80%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 80
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 75%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 75
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 70%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 70
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 65%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 65
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 60%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 60
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 55%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 55
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 50%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 50
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Choose ONE
+    #$ OPTION BEGIN (CHECKED): ExpressLRS 500hz Race
+        set rc_smoothing_auto_factor = 25
+        set rc_smoothing_auto_factor_throttle = 25
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 65
+        set feedforward_jitter_factor = 3
+        set feedforward_boost = 18
+    #$ OPTION END
+#$ OPTION_GROUP END    
+
+
+
+
+# osd overrides
+set vbat_scale  = 112
+set ibata_scale = 170
+
+set vbat_max_cell_voltage = 445
+set vbat_min_cell_voltage = 315
+set report_cell_voltage = ON
+
+# OSD ESC RPM Alarm - shows ESC1234 with an R in place of a the motor number that is jammed";
+set osd_esc_rpm_alarm = 1000
+
+set osd_logo_on_arming = OFF
+#$ OPTION_GROUP BEGIN: Choose ONE Show OSD Logo
+    #$ OPTION BEGIN (UNCHECKED): Never
+        set osd_logo_on_arming = OFF
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): First Arming Only
+        set osd_logo_on_arming = FIRST_ARMING
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Every Arming
+        set osd_logo_on_arming = ON
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set osd_logo_on_arming_duration = 30
+#$ OPTION_GROUP BEGIN: Choose ONE Logo Display Duration
+    #$ OPTION BEGIN (UNCHECKED): 1 second
+        set osd_logo_on_arming_duration = 10
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2 seconds
+        set osd_logo_on_arming_duration = 20
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): 3 seconds
+        set osd_logo_on_arming_duration = 30
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 4 seconds
+        set osd_logo_on_arming_duration = 40
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 5 seconds
+        set osd_logo_on_arming_duration = 50
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set osd_units = IMPERIAL
+#$ OPTION_GROUP BEGIN: Choose ONE OSD Units
+    #$ OPTION BEGIN (CHECKED): Imperial
+        set osd_units = IMPERIAL
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Metric
+        set osd_units = METRIC
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set bat_capacity = 300
+# osd capacity alarm = <battery capacity mah> * 0.70
+set osd_cap_alarm = 210
+#$ OPTION_GROUP BEGIN: Choose ONE Battery Capacity
+    #$ OPTION BEGIN (CHECKED): 300 mAh
+        set bat_capacity = 300
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 210
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 350 mAh
+        set bat_capacity = 350
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 245
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 380 mAh
+        set bat_capacity = 380
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 266
+    #$ OPTION END
+#$ OPTION_GROUP END
