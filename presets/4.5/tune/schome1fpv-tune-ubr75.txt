@@ -92,9 +92,6 @@ set gyro_lpf2_static_hz = 300
 set gyro_lpf1_dyn_min_hz = 150
 set gyro_lpf1_dyn_max_hz = 300
 
-set rc_smoothing_auto_factor = 25
-set rc_smoothing_auto_factor_throttle = 25
-
 set pid_process_denom = 4
 
 set rpm_filter_harmonics = 2
@@ -132,15 +129,6 @@ set angle_level_strength = 100
 
 set d_min_roll = 54
 set d_min_pitch = 61
-
-set thrust_linear = 20
-
-set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 65
-set feedforward_jitter_factor = 3
-set feedforward_boost = 18
-
-set dyn_idle_min_rpm = 94
 
 set simplified_master_multiplier = 180
 set simplified_pi_gain = 70

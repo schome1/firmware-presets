@@ -5348,7 +5348,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/schome1fpv-osd-ubr75.txt",
-      "hash": "1c7a3ae6a3bf6b07176f14e60837a168b510861981703b06516ce617cac48729",
+      "hash": "330699e7d2e6c0b1c721035f09ddeb11bc4416d2d0bbfc4c5e50046dc6987bc3",
       "title": "Schome1FPV - UBR75 HD OSD",
       "firmware_version": [
         "4.5"
@@ -5537,7 +5537,7 @@
     },
     {
       "fullPath": "presets/4.5/rc_link/schome1fpv-elrs-500hz-race.txt",
-      "hash": "68b4f551c411e359c2936f76da02be5d380d782504d37ea50ff4bbf20db5738c",
+      "hash": "a0b3e3c05ea067bb51331604985ae1fee93b80aeb6cfe37948d24aca946f4d02",
       "title": "Schome1FPV - ExpressLRS 500hz Race",
       "firmware_version": [
         "4.5"
@@ -5993,7 +5993,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/schome1fpv-tune-ubr75.txt",
-      "hash": "42c541f1c191695762d2175352a43d60a06f02e1e2c900fc7beb1a76c7e2b618",
+      "hash": "ca30238d1f00e54a909c473b05f1931ae3b44e531155c100405bcfb14b82e200",
       "title": "Schome1FPV - UBR75 TUNE",
       "firmware_version": [
         "4.5"
