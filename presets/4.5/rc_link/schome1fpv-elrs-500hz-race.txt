@@ -7,7 +7,7 @@
 
 #$ DESCRIPTION: Presets for ExpressLRS RXs running at 500hz with Race settings.
 
-#$ OPTION_GROUP BEGIN: ELRS RX Connection (choose one)
+#$ OPTION_GROUP BEGIN: Choose ONE
     #$ OPTION BEGIN (CHECKED): Serial, external RX
         feature RX_SERIAL
         feature -RX_SPI

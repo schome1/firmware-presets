@@ -20,7 +20,7 @@ aux 5 31 5 1700 2100
     #$ OPTION BEGIN (UNCHECKED): ARM (low position)
         aux 0 0 0 900 1500
     #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): ARM (high position))
+    #$ OPTION BEGIN (CHECKED): ARM (high position)
         aux 0 0 0 1500 2100
     #$ OPTION END
 #$ OPTION_GROUP END    

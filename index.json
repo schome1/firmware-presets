@@ -5325,7 +5325,7 @@
     },
     {
       "fullPath": "presets/4.5/modes/schome1fpv-modes.txt",
-      "hash": "0a8702a4da5c61907704cce0145bcc7dbedc41000e61fa3b2a39b381522d8a70",
+      "hash": "608446cff984428bdf9ff3468aa04cda43d56362a2c83718e7058c85c4a6d04e",
       "title": "Schome1FPV - Modes",
       "firmware_version": [
         "4.5"
@@ -5501,7 +5501,7 @@
     },
     {
       "fullPath": "presets/4.5/rc_link/schome1fpv-elrs-500hz-race.txt",
-      "hash": "c2d2f93e648d62f529ffbe490adf496ae23ccd085363295a38d74525293f1335",
+      "hash": "68b4f551c411e359c2936f76da02be5d380d782504d37ea50ff4bbf20db5738c",
       "title": "Schome1FPV - ExpressLRS 500hz Race",
       "firmware_version": [
         "4.5"
