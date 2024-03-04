@@ -1,0 +1,618 @@
+#$ TITLE: Schome1FPV - FLYWOOF405S_AIO
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OTHER
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: flywoo, goku, versatile, f405
+#$ AUTHOR: Schome1FPV (Mike Schommer)
+#$ DESCRIPTION: Presets for the Flywoo GOKU Versatile F405 flight controller.
+
+# resources
+# timer
+# dma
+
+
+
+
+# feature
+
+feature RX_SERIAL
+feature MOTOR_STOP
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+feature ANTI_GRAVITY
+
+
+
+
+# serial
+
+#$ OPTION_GROUP BEGIN: RX UART (choose one)
+    #$ OPTION BEGIN (CHECKED): RX UART 1
+        serial 0 64 115200 57600 0 115200
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): RX UART 2
+        serial 1 64 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): RX UART 3
+        serial 2 64 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): RX UART 4
+        serial 3 64 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): RX UART 5
+        serial 4 64 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): RX UART 6
+        serial 5 64 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: VTX UART
+    #$ OPTION BEGIN (UNCHECKED): VTX UART 1
+        serial 0 131073 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): VTX UART 2
+        serial 1 131073 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): VTX UART 3
+        serial 2 131073 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): VTX UART 4
+        serial 3 131073 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): VTX UART 5
+        serial 4 131073 115200 57600 0 115200
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): VTX UART 6
+        serial 5 131073 115200 57600 0 115200
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+
+
+# mixer
+mixer QUADX
+mmix reset
+
+
+
+
+# beeper
+# - disable all beepers
+beeper -ALL
+
+
+
+
+# beacon
+# - beacon
+# --- LEDs will do as indicated (see led section in each fc preset that I create) when the RX switch that is setup for this is triggered
+# --- Motors will ding at the designated tone when the RX switch that is setup for this is triggered
+beacon RX_SET
+
+# 1-5, with 5 being the easiest to hear
+set beeper_dshot_beacon_tone = 5
+
+
+
+
+# map
+
+
+
+
+# led
+set ledstrip_profile = RACE
+#$ OPTION_GROUP BEGIN: Choose ONE LED Color
+    #$ OPTION BEGIN (UNCHECKED): Black
+        set ledstrip_race_color = BLACK
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): White
+        set ledstrip_race_color = WHITE
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Red
+        set ledstrip_race_color = RED
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Orange
+        set ledstrip_race_color = ORANGE
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Yellow
+        set ledstrip_race_color = YELLOW
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Lime Green
+        set ledstrip_race_color = LIME_GREEN
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Green
+        set ledstrip_race_color = GREEN
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Mint Green
+        set ledstrip_race_color = MINT_GREEN
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Cyan
+        set ledstrip_race_color = CYAN
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Light Blue
+        set ledstrip_race_color = LIGHT_BLUE
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Blue
+        set ledstrip_race_color = BLUE
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Dark Violet
+        set ledstrip_race_color = DARK_VIOLET
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Magenta
+        set ledstrip_race_color = MAGENTA
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Deep Pink
+        set ledstrip_race_color = DEEP_PINK
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Choose ONE LED Brightness
+    #$ OPTION BEGIN (CHECKED): 100%
+        set ledstrip_brightness = 100
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 90%
+        set ledstrip_brightness = 90
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 80%
+        set ledstrip_brightness = 80
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 70%
+        set ledstrip_brightness = 70
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 60%
+        set ledstrip_brightness = 60
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 50%
+        set ledstrip_brightness = 50
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 40%
+        set ledstrip_brightness = 40
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 30%
+        set ledstrip_brightness = 30
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 20%
+        set ledstrip_brightness = 20
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 10%
+        set ledstrip_brightness = 10
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+
+
+# color
+
+
+
+
+# mode_color
+
+
+
+
+# map switches
+# - AUX 1 (0) = ARM <low>
+# - AUX 2 (1) = FLIP OVER AFTER CRASH <high>
+# - AUX 3 (2) = AIRMODE <high>
+# - AUX 4 (3) = ANGLE <high>
+# - AUX 5 (4) = [RESERVED] VTX Power (not assigned via vtx cli command, not aux)
+# - AUX 6 (5) = BLACKBOX <mid> | BLACKBOX ERASE <high>
+# - AUX 7 (6) = BEEPER <high> (requires disabled ARM)
+#
+# https://betaflight.com/docs/development/Modes
+
+# - ARM
+aux 0 0 0 900 1500
+
+# - FLIP OVER AFTER CRASH
+aux 1 35 1 1500 2100
+
+# - AIRMODE
+aux 2 28 2 1500 2100
+
+# - ANGLE
+aux 3 1 3 1500 2100
+
+# - vtx power switch is at AUX 5
+vtx 0 4 0 0 3 900 1300
+vtx 1 4 0 0 1 1300 1700
+vtx 2 4 0 0 2 1700 2100
+
+# - rxfail uses AUX 5 (four sicks plus 5 aux ports = AUX 9 minus 1 = 8 ) <-- zero based index
+rxfail 8 s 1000        
+
+# - BLACKBOX
+aux 4 26 5 1300 1700
+
+# - BLACKBOX ERASE
+aux 5 31 5 1700 2100
+
+# - BEEPER is only enabled if not armed and beeper switch is engaged
+aux 6 13 6 1500 2100 1 0
+aux 7 13 0 1500 2100 1 0
+
+
+
+
+# adjrange
+
+
+
+
+# rxrange
+
+
+
+
+# vtxtable 
+# - reset all
+vtxtable bands 0
+vtxtable channels 0
+vtxtable powerlevels 0
+vtxtable powervalues
+vtxtable powerlabels
+
+# - assignments
+vtxtable bands 6
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A FACTORY 0 0 0 0 0 0 0 0
+vtxtable band 2 BOSCAM_B B FACTORY 0 0 0 0 0 0 0 0
+vtxtable band 3 BOSCAM_E E FACTORY 0 0 0 0 0 0 0 0
+vtxtable band 4 FATSHARK F FACTORY 0 5760 0 5800 0 0 0 0
+vtxtable band 5 RACEBAND R FACTORY 5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable band 6 IMD6 I CUSTOM 0 0 0 0 0 0 0 0
+vtxtable powerlevels 3
+vtxtable powervalues 14 23 0
+vtxtable powerlabels 25 200 0
+
+# default to power level 3, which is off (0)
+set vtx_power = 3
+
+#$ OPTION_GROUP BEGIN: Choose ONE VTX Band
+    #$ OPTION BEGIN (UNCHECKED): A
+        set vtx_band = 1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): B
+        set vtx_band = 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): E
+        set vtx_band = 3
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): F
+        set vtx_band = 4
+    #$ OPTION END
+    #$ OPTION BEGIN (CHECKED): R
+        set vtx_band = 5
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Choose ONE VTX Channel
+    #$ OPTION BEGIN (CHECKED): 1
+        set vtx_channel = 1
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 2
+        set vtx_channel = 2
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 3
+        set vtx_channel = 3
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 4
+        set vtx_channel = 4
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 5
+        set vtx_channel = 5
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 6
+        set vtx_channel = 6
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 7
+        set vtx_channel = 7
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): 8
+        set vtx_channel = 8
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+
+
+# vtx
+# - assigned above in the map switches section
+
+
+
+# rxfail
+# - assigned above in the map switches section
+
+
+
+
+# profile 0
+
+
+
+
+# rateprofile 0
+
+
+
+
+# osd
+set osd_canvas_width = 50
+set osd_canvas_height = 18
+set osd_displayport_device = MSP
+set vcd_video_system = HD
+
+set osd_tim1 = 2561
+set osd_tim2 = 2560
+
+set osd_warn_bitmask = 50175
+set osd_stat_bitmask = 28554979
+set osd_rssi_dbm_alarm = -105
+
+set osd_vbat_pos = 395
+set osd_rssi_pos = 194
+set osd_link_quality_pos = 13580
+set osd_rssi_dbm_pos = 14336
+set osd_rsnr_pos = 448
+set osd_tim_1_pos = 14358
+set osd_tim_2_pos = 87
+set osd_remaining_time_estimate_pos = 33
+set osd_flymode_pos = 15374
+set osd_throttle_pos = 240
+set osd_vtx_channel_pos = 30727
+set osd_current_pos = 15365
+set osd_mah_drawn_pos = 14366
+set osd_craft_name_pos = 14880
+set osd_pilot_name_pos = 15915
+set osd_home_dist_pos = 98
+set osd_flight_dist_pos = 130
+set osd_power_pos = 1551
+set osd_warnings_pos = 14387
+set osd_avg_cell_voltage_pos = 14349
+set osd_battery_usage_pos = 33002
+set osd_disarmed_pos = 14421
+set osd_ready_mode_pos = 14454
+set osd_esc_tmp_pos = 163
+set osd_esc_rpm_pos = 150
+set osd_rtc_date_time_pos = 426
+set osd_flip_arrow_pos = 14488
+set osd_core_temp_pos = 12544
+set osd_sys_vtx_temp_pos = 12576
+
+set vbat_max_cell_voltage = 445
+set vbat_min_cell_voltage = 315
+set report_cell_voltage = ON
+
+# OSD ESC RPM Alarm - shows ESC1234 with an R in place of a the motor number that is jammed";
+set osd_esc_rpm_alarm = 1000
+
+set osd_logo_on_arming = OFF
+#$ OPTION_GROUP BEGIN: Choose ONE Show OSD Logo
+    #$ OPTION BEGIN (UNCHECKED): Never
+        set osd_logo_on_arming = OFF
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): First Arming Only
+        set osd_logo_on_arming = FIRST_ARMING
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Every Arming
+        set osd_logo_on_arming = ON
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set osd_logo_on_arming_duration = 30
+#$ OPTION_GROUP BEGIN: Choose ONE Logo Display Duration
+    #$ OPTION BEGIN (UNCHECKED): 1 second
+        set osd_logo_on_arming_duration = 10
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 2 seconds
+        set osd_logo_on_arming_duration = 20
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): 3 seconds
+        set osd_logo_on_arming_duration = 30
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 4 seconds
+        set osd_logo_on_arming_duration = 40
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 5 seconds
+        set osd_logo_on_arming_duration = 50
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set osd_units = IMPERIAL
+#$ OPTION_GROUP BEGIN: Choose ONE OSD Units
+    #$ OPTION BEGIN (CHECKED): Imperial
+        set osd_units = IMPERIAL
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Metric
+        set osd_units = METRIC
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set bat_capacity = 300
+# osd capacity alarm = <battery capacity mah> * 0.70
+set osd_cap_alarm = 210
+#$ OPTION_GROUP BEGIN: Choose ONE Battery Capacity
+    #$ OPTION BEGIN (CHECKED): 300 mAh
+        set bat_capacity = 300
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 210
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 350 mAh
+        set bat_capacity = 350
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 245
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 380 mAh
+        set bat_capacity = 380
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 266
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): 400 mAh
+        set bat_capacity = 400
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 280
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 450 mAh
+        set bat_capacity = 450
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 315
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 500 mAh
+        set bat_capacity = 500
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 350
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 525 mAh
+        set bat_capacity = 525
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 368
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 530 mAh
+        set bat_capacity = 530
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 371
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 550 mAh
+        set bat_capacity = 550
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 385
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 560 mAh
+        set bat_capacity = 560
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 392
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 650 mAh
+        set bat_capacity = 650
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 455
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 660 mAh
+        set bat_capacity = 660
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 462
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 700 mAh
+        set bat_capacity = 700
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 490
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 720 mAh
+        set bat_capacity = 720
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 504
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 850 mAh
+        set bat_capacity = 850
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 595
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 930 mAh
+        set bat_capacity = 930
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 651
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+
+
+# rc_link
+# - ExpressLRS 500 horizon_delay_ms
+
+#$ OPTION_GROUP BEGIN: Choose ONE
+    #$ OPTION BEGIN (CHECKED): Serial, external RX
+        feature RX_SERIAL
+        feature -RX_SPI
+        set serialrx_provider = CRSF
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): SPI, integrated RX
+        # feature
+        feature -RX_SERIAL
+        feature RX_SPI
+        set rx_spi_protocol = EXPRESSLRS
+    #$ OPTION END
+#$ OPTION_GROUP END    
+
+set rc_smoothing_auto_factor = 25
+set rc_smoothing_auto_factor_throttle = 25
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 3
+set feedforward_boost = 18

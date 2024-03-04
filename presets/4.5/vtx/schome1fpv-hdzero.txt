@@ -6,11 +6,19 @@
 #$ AUTHOR: Schome1FPV (Mike Schommer)
 #$ DESCRIPTION: Presets for HDZero Whoop Lite VTX
 
+# vtxtable 
+# reset all
 vtxtable bands 0
 vtxtable channels 0
 vtxtable powerlevels 0
 vtxtable powervalues
 vtxtable powerlabels
+
+
+
+
+# vtxtable
+# - assignments
 vtxtable bands 6
 vtxtable channels 8
 vtxtable band 1 BOSCAM_A A FACTORY 0 0 0 0 0 0 0 0
@@ -23,7 +31,14 @@ vtxtable powerlevels 3
 vtxtable powervalues 14 23 0
 vtxtable powerlabels 25 200 0
 
+
+
+
+# default to power level 3, which is off (0)
 set vtx_power = 3
+
+
+
 
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Band
     #$ OPTION BEGIN (UNCHECKED): A
@@ -42,6 +57,9 @@ set vtx_power = 3
         set vtx_band = 5
     #$ OPTION END
 #$ OPTION_GROUP END
+
+
+
 
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Channel
     #$ OPTION BEGIN (CHECKED): 1
@@ -69,6 +87,9 @@ set vtx_power = 3
         set vtx_channel = 8
     #$ OPTION END
 #$ OPTION_GROUP END
+
+
+
 
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Power Channel
     #$ OPTION BEGIN (UNCHECKED): AUX 2
