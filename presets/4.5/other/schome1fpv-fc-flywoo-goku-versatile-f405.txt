@@ -184,7 +184,6 @@ set ledstrip_profile = RACE
     #$ OPTION END
 #$ OPTION_GROUP END
 
-set ledstrip_brightness = 100
 #$ OPTION_GROUP BEGIN: Choose ONE LED Brightness
     #$ OPTION BEGIN (CHECKED): 100%
         set ledstrip_brightness = 100
