@@ -519,7 +519,7 @@ set osd_cap_alarm = 210
         set osd_cap_alarm = 266
     #$ OPTION END
     
-    #$ OPTION BEGIN (CHECKED): 400 mAh
+    #$ OPTION BEGIN (UNCHECKED): 400 mAh
         set bat_capacity = 400
 
         # osd capacity alarm = <battery capacity mah> * 0.70
