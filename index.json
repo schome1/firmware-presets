@@ -380,6 +380,7 @@
       "launch_mode",
       "LeadFingers",
       "League",
+      "led",
       "leds",
       "Limon",
       "link",
@@ -5329,6 +5330,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/leds/schome1fpv-led.txt",
+      "hash": "3fcd1358adb1471a53fe0abe2f006d4cb2d7a0f35c3c5192f93b89a20c64cfe4",
+      "title": "Schome1FPV - LED",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "led",
+        "race",
+        "profile"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/modes/schome1fpv-modes.txt",
       "hash": "35a958d3964c6188cbe2e4747538876f6ee48251aa4b39360287a99c9f8ad459",
       "title": "Schome1FPV - Modes",
@@ -5491,27 +5509,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/other/schome1fpv-fc-default-settings-flywoo-goku-versatile-f405.txt",
-      "hash": "d9352acb2c0f5821ec7c05f1cb2a16b4e72dd49000ac1198fd27ae453753b531",
-      "title": "Schome1FPV - FLYWOO GOKU VERSATILE F405 DEFAULTS",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "OTHER",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "flywoo",
-        "goku",
-        "versatile",
-        "f405"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/other/schome1fpv-fc-flywoo-goku-versatile-f405.txt",
-      "hash": "9af86c7295958c1e19556dbe73266c188e00bcb5ed9ba31940ef3e24e73d6260",
-      "title": "Schome1FPV - FLYWOO GOKU VERSATILE F405",
+      "hash": "b7539a3bcd2b862b2abb322222191e4a2d4f3b26ace05d4bc46f4919a11651e1",
+      "title": "Schome1FPV - FLYWOOF405S_AIO",
       "firmware_version": [
         "4.5"
       ],
