@@ -5,7 +5,6 @@
 #$ KEYWORDS: flywoo, goku, versatile, f405
 #$ AUTHOR: Schome1FPV (Mike Schommer)
 #$ DESCRIPTION: Presets for the Flywoo GOKU Versatile F405 flight controller.
-#$ INCLUDE: presets/4.5/other/schome1fpv-fc-default-settings-flywoo-goku-versatile-f405.txt
 
 # resources
 # timer
