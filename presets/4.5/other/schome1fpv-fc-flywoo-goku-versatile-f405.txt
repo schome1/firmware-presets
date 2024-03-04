@@ -73,6 +73,9 @@ feature ANTI_GRAVITY
 
 
 # mixer
+mixer QUADX
+
+mmix reset
 
 
 
@@ -84,7 +87,7 @@ beeper -ALL
 
 
 # beacon
-beeper RX_SET
+beacon RX_SET
 
 
 
@@ -96,11 +99,11 @@ beeper RX_SET
 
 # led
 # https://betaflight.com/docs/development/LedStrip
-
-# led 0 8,8::CB:4
-# led 1 9,8::CB:4
-# led 2 10,8::CB:4
-# led 3 11,8::CB:4
+# - default to color blink, white
+led 0 8,8::CB:1
+led 1 9,8::CB:1
+led 2 10,8::CB:1
+led 3 11,8::CB:1
 
 
 
@@ -120,10 +123,8 @@ aux 2 28 2 1500 2100
 aux 3 1 3 1500 2100
 aux 4 26 5 1300 1700
 aux 5 31 5 1700 2100
-aux 6 13 7 1500 2100
-
-
-
+aux 6 13 6 1500 2100 1 0
+aux 7 13 0 1500 2100 1 0
 
 # adjrange
 # rxrange
@@ -136,6 +137,7 @@ aux 6 13 7 1500 2100
 
 # master
 
+set beeper_dshot_beacon_tone = 5
 set ledstrip_profile = RACE
 #$ OPTION_GROUP BEGIN: Choose ONE LED Color
     #$ OPTION BEGIN (UNCHECKED): Black
@@ -215,8 +217,6 @@ set ledstrip_brightness = 100
         set ledstrip_brightness = 10
     #$ OPTION END
 #$ OPTION_GROUP END
-
-set beeper_dshot_beacon_tone = 3
 
 
 

@@ -253,10 +253,10 @@ beacon -RX_SET
 map AETR1234
 
 # led
-led 0 8,8::CB:4
-led 1 9,8::CB:4
-led 2 10,8::CB:4
-led 3 11,8::CB:4
+led 0 8,8::C:0
+led 1 9,8::C:0
+led 2 10,8::C:0
+led 3 11,8::C:0
 led 4 0,0::C:0
 led 5 0,0::C:0
 led 6 0,0::C:0
