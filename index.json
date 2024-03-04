@@ -5329,12 +5329,12 @@
     },
     {
       "fullPath": "presets/4.5/leds/schome1fpv-led.txt",
-      "hash": "3fcd1358adb1471a53fe0abe2f006d4cb2d7a0f35c3c5192f93b89a20c64cfe4",
+      "hash": "93d41dbe89fa06d644cd0dbdfc57ee0a1e9d9dca8e8c944b63c4177779f859c5",
       "title": "Schome1FPV - LED",
       "firmware_version": [
         "4.5"
       ],
-      "category": "OTHER",
+      "category": "LEDS",
       "status": "EXPERIMENTAL",
       "keywords": [
         "led",
@@ -5452,7 +5452,7 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-default-presets.txt",
-      "hash": "aef29e4a0cc7a2221bbffe78c2252a629ff3046eabe53ef8deaecd7e644b96a0",
+      "hash": "4bc921978247ec8351f46f8847eb790be81ae87d22f8578ff447a6eb642428f7",
       "title": "Schome1FPV - PERSONAL PRESETS",
       "firmware_version": [
         "4.5"

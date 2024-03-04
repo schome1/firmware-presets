@@ -1,6 +1,6 @@
 #$ TITLE: Schome1FPV - LED
 #$ FIRMWARE_VERSION: 4.5
-#$ CATEGORY: OTHER
+#$ CATEGORY: LEDS
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: led, race, profile
 #$ AUTHOR: Schome1FPV (Mike Schommer)
