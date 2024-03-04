@@ -15,18 +15,11 @@ set dyn_idle_min_rpm = 95
 # thrust linear = (<esc pwm frequency> >= 96 ? 40 : (userValue <= 24 ? 0 : 20));
 set thrust_linear = 40;
 
-set acc_hardware = AUTO
-
-set small_angle = 180
-
 set simplified_gyro_filter_multiplier = 60
 
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
-set yaw_motors_reversed = ON
 set dshot_bidir = ON
-set min_check = 1020
-set max_check = 2000
 
 set acc_lpf_hz = 10
 
@@ -41,11 +34,6 @@ set gyro_lpf1_dyn_max_hz = 300
 set pid_process_denom = 4
 
 set rpm_filter_harmonics = 2
-
-set debug_mode = GYRO_SCALED
-set blackbox_sample_rate = 1/2
-
-set crash_recovery = OFF
 
 set dterm_lpf1_dyn_min_hz = 90
 set dterm_lpf1_dyn_max_hz = 180
@@ -79,67 +67,6 @@ set simplified_dmax_gain = 0
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 120
 
-set roll_rc_rate = 40
-set pitch_rc_rate = 30
-set yaw_rc_rate = 40
-set roll_srate = 40
-set pitch_srate = 30
-set yaw_srate = 40
-
-set throttle_limit_type = OFF
-set throttle_limit_percent = 100
-
-#$ OPTION BEGIN (CHECKED): Use Crash Recovery
-    set crash_recovery = ON
-#$ OPTION END
-
-#$ OPTION_GROUP BEGIN: Choose ONE Throttle Limit
-    #$ OPTION BEGIN (CHECKED): 100%
-        set throttle_limit_type = OFF
-        set throttle_limit_percent = 100
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 95%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 95
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 90%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 90
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 85%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 85
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 80%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 80
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 75%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 75
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 70%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 70
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 65%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 65
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 60%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 60
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 55%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 55
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 50%
-        set throttle_limit_type = SCALE
-        set throttle_limit_percent = 50
-    #$ OPTION END
-#$ OPTION_GROUP END
-
 #$ OPTION_GROUP BEGIN: Choose ONE
     #$ OPTION BEGIN (CHECKED): ExpressLRS 500hz Race
         set rc_smoothing_auto_factor = 25
@@ -157,55 +84,6 @@ set throttle_limit_percent = 100
 # osd overrides
 set vbat_scale  = 112
 set ibata_scale = 170
-
-set vbat_max_cell_voltage = 445
-set vbat_min_cell_voltage = 315
-set report_cell_voltage = ON
-
-# OSD ESC RPM Alarm - shows ESC1234 with an R in place of a the motor number that is jammed";
-set osd_esc_rpm_alarm = 1000
-
-set osd_logo_on_arming = OFF
-#$ OPTION_GROUP BEGIN: Choose ONE Show OSD Logo
-    #$ OPTION BEGIN (UNCHECKED): Never
-        set osd_logo_on_arming = OFF
-    #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): First Arming Only
-        set osd_logo_on_arming = FIRST_ARMING
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): Every Arming
-        set osd_logo_on_arming = ON
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-set osd_logo_on_arming_duration = 30
-#$ OPTION_GROUP BEGIN: Choose ONE Logo Display Duration
-    #$ OPTION BEGIN (UNCHECKED): 1 second
-        set osd_logo_on_arming_duration = 10
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 2 seconds
-        set osd_logo_on_arming_duration = 20
-    #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): 3 seconds
-        set osd_logo_on_arming_duration = 30
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 4 seconds
-        set osd_logo_on_arming_duration = 40
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 5 seconds
-        set osd_logo_on_arming_duration = 50
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-set osd_units = IMPERIAL
-#$ OPTION_GROUP BEGIN: Choose ONE OSD Units
-    #$ OPTION BEGIN (CHECKED): Imperial
-        set osd_units = IMPERIAL
-    #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): Metric
-        set osd_units = METRIC
-    #$ OPTION END
-#$ OPTION_GROUP END
 
 set bat_capacity = 300
 # osd capacity alarm = <battery capacity mah> * 0.70

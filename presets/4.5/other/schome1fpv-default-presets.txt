@@ -26,12 +26,73 @@
 
 # feature
 
+feature -AIRMODE
 feature RX_SERIAL
 feature MOTOR_STOP
 feature TELEMETRY
 feature LED_STRIP
 feature OSD
 feature ANTI_GRAVITY
+
+
+
+
+#$ OPTION_GROUP BEGIN: Choose ONE Throttle Limit
+    #$ OPTION BEGIN (CHECKED): 100%
+        set throttle_limit_type = OFF
+        set throttle_limit_percent = 100
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 95%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 95
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 90%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 90
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 85%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 85
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 80%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 80
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 75%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 75
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 70%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 70
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 65%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 65
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 60%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 60
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 55%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 55
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 50%
+        set throttle_limit_type = SCALE
+        set throttle_limit_percent = 50
+    #$ OPTION END
+#$ OPTION_GROUP END
 
 
 
@@ -260,7 +321,12 @@ aux 1 35 1 1500 2100
 aux 2 28 2 1500 2100
 
 # - ANGLE
-aux 3 1 3 1500 2100
+# - this is either added or omitted depending on whether the accelerometer is enabled or not
+set crash_recovery = OFF
+#$ OPTION BEGIN (CHECKED): Use Accelerometer
+    set crash_recovery = ON
+    aux 3 1 3 1500 2100
+#$ OPTION END
 
 # - vtx power switch is at AUX 5
 # - the vtx power switch must be written after the vtx power levels have been established - see them below with the vtx commands
@@ -281,6 +347,33 @@ aux 5 31 5 1700 2100
 # - BEEPER is only enabled if not armed and beeper switch is engaged
 aux 6 13 6 1500 2100 1 0
 aux 7 13 0 1500 2100 1 0
+
+
+
+
+# barometer
+# - unused, disabled
+set baro_hardware = OFF
+
+
+
+
+# throttle scaling
+set throttle_limit_type = OFF
+set throttle_limit_percent = 100
+
+
+
+
+# motors
+# reversed (into the sides, out from the front/back)
+set yaw_motors_reversed = ON
+
+
+
+
+# - arm at any angle
+set small_angle = 180
 
 
 
@@ -439,11 +532,14 @@ set osd_flip_arrow_pos = 14488
 set osd_core_temp_pos = 12544
 set osd_sys_vtx_temp_pos = 12576
 
+# osd
+# - battery warnings and display
 set vbat_max_cell_voltage = 445
 set vbat_min_cell_voltage = 315
 set report_cell_voltage = ON
 
-# OSD ESC RPM Alarm - shows ESC1234 with an R in place of a the motor number that is jammed";
+# osd
+# - esc rpm alarm - shows ESC1234 with an R in place of a the motor number that is jammed";
 set osd_esc_rpm_alarm = 1000
 
 set osd_logo_on_arming = OFF
@@ -617,6 +713,9 @@ set osd_cap_alarm = 210
 # rc_link
 # - ExpressLRS 500 horizon_delay_ms
 
+set min_check = 1020
+set max_check = 2000
+
 #$ OPTION_GROUP BEGIN: Choose ONE
     #$ OPTION BEGIN (CHECKED): Serial, external RX
         feature RX_SERIAL
@@ -637,3 +736,22 @@ set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 3
 set feedforward_boost = 18
+
+
+
+
+# gyro
+set debug_mode = GYRO_SCALED
+set blackbox_sample_rate = 1/2
+
+
+
+
+# rates
+set rates_type = ACTUAL
+set roll_rc_rate = 40
+set pitch_rc_rate = 30
+set yaw_rc_rate = 40
+set roll_srate = 40
+set pitch_srate = 30
+set yaw_srate = 40

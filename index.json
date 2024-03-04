@@ -5452,7 +5452,7 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-default-presets.txt",
-      "hash": "33c8c300b22ec9b7d9ae7f55e6642d5929c950271920aa052b5409ecf9840d88",
+      "hash": "193bad2d691230fb5b66fb0e03089cdb0259f9bf3215f23720297956a68fc135",
       "title": "Schome1FPV - PERSONAL PRESETS",
       "firmware_version": [
         "4.5"
@@ -5990,7 +5990,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/schome1fpv-uir75-tune.txt",
-      "hash": "683219fb306eeb61c17dfa804c599dfb8bb8d26f7746b09b46aa6f7487581aa9",
+      "hash": "130ab9303027f4ad2d0a2983825ae19ed47d292ffa2b849e01f2afaf3aa2a361",
       "title": "Schome1FPV - UIR75 TUNE",
       "firmware_version": [
         "4.5"
