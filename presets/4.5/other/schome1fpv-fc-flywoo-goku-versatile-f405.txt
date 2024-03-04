@@ -31,18 +31,23 @@ feature ANTI_GRAVITY
     #$ OPTION BEGIN (CHECKED): 1
         serial 0 64 115200 57600 0 115200
     #$ OPTION END
+
     #$ OPTION BEGIN (UNCHECKED): 2
         serial 1 64 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 3
         serial 2 64 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 4
         serial 3 64 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 5
         serial 4 64 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 6
         serial 5 64 115200 57600 0 115200
     #$ OPTION END
@@ -52,18 +57,23 @@ feature ANTI_GRAVITY
     #$ OPTION BEGIN (UNCHECKED): 1
         serial 0 131073 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 2
         serial 1 131073 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 3
         serial 2 131073 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 4
         serial 3 131073 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 5
         serial 4 131073 115200 57600 0 115200
     #$ OPTION END
+    
     #$ OPTION BEGIN (CHECKED): 6
         serial 5 131073 115200 57600 0 115200
     #$ OPTION END
@@ -143,42 +153,55 @@ set ledstrip_profile = RACE
     #$ OPTION BEGIN (UNCHECKED): Black
         set ledstrip_race_color = BLACK
     #$ OPTION END
+    
     #$ OPTION BEGIN (CHECKED): White
         set ledstrip_race_color = WHITE
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Red
         set ledstrip_race_color = RED
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Orange
         set ledstrip_race_color = ORANGE
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Yellow
         set ledstrip_race_color = YELLOW
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Lime Green
         set ledstrip_race_color = LIME_GREEN
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Green
         set ledstrip_race_color = GREEN
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Mint Green
         set ledstrip_race_color = MINT_GREEN
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Cyan
         set ledstrip_race_color = CYAN
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Light Blue
         set ledstrip_race_color = LIGHT_BLUE
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Blue
         set ledstrip_race_color = BLUE
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Dark Violet
         set ledstrip_race_color = DARK_VIOLET
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Magenta
         set ledstrip_race_color = MAGENTA
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): Deep Pink
         set ledstrip_race_color = DEEP_PINK
     #$ OPTION END
@@ -188,30 +211,39 @@ set ledstrip_profile = RACE
     #$ OPTION BEGIN (CHECKED): 100%
         set ledstrip_brightness = 100
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 90%
         set ledstrip_brightness = 90
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 80%
         set ledstrip_brightness = 80
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 70%
         set ledstrip_brightness = 70
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 60%
         set ledstrip_brightness = 60
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 50%
         set ledstrip_brightness = 50
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 40%
         set ledstrip_brightness = 40
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 30%
         set ledstrip_brightness = 30
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 20%
         set ledstrip_brightness = 20
     #$ OPTION END
+    
     #$ OPTION BEGIN (UNCHECKED): 10%
         set ledstrip_brightness = 10
     #$ OPTION END
