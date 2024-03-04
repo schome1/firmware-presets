@@ -466,6 +466,7 @@
       "sbang",
       "sbus",
       "SBUS fast",
+      "schome1",
       "shames",
       "shitpilot",
       "sliders",
@@ -5451,18 +5452,15 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-default-presets.txt",
-      "hash": "6439eaaa0492bef9a4cc5a5aaa7261a5b06680343a3a28c589c33ceaea2205e0",
-      "title": "Schome1FPV - FLYWOOF405S_AIO",
+      "hash": "aef29e4a0cc7a2221bbffe78c2252a629ff3046eabe53ef8deaecd7e644b96a0",
+      "title": "Schome1FPV - PERSONAL PRESETS",
       "firmware_version": [
         "4.5"
       ],
       "category": "OTHER",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "flywoo",
-        "goku",
-        "versatile",
-        "f405"
+        "schome1"
       ],
       "author": "Schome1FPV (Mike Schommer)",
       "priority": 0

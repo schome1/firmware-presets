@@ -1,13 +1,24 @@
-#$ TITLE: Schome1FPV - FLYWOOF405S_AIO
+#$ TITLE: Schome1FPV - PERSONAL PRESETS
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: flywoo, goku, versatile, f405
+#$ KEYWORDS: schome1
 #$ AUTHOR: Schome1FPV (Mike Schommer)
-#$ DESCRIPTION: Presets for the Flywoo GOKU Versatile F405 flight controller.
+#$ DESCRIPTION: These are the presets that I use on all of my drones.
+
+
+
 
 # resources
+
+
+
+
 # timer
+
+
+
+
 # dma
 
 
