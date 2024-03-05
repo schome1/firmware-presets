@@ -37,58 +37,58 @@ feature ANTI_GRAVITY
 
 
 
-#$ OPTION_GROUP BEGIN: Choose ONE Throttle Limit
-    #$ OPTION BEGIN (CHECKED): 100%
+#$ OPTION_GROUP BEGIN: Choose ONE Throttle Scale
+    #$ OPTION BEGIN (CHECKED): 100% Throttle
         set throttle_limit_type = OFF
         set throttle_limit_percent = 100
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 95%
+    #$ OPTION BEGIN (UNCHECKED): 95% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 95
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 90%
+    #$ OPTION BEGIN (UNCHECKED): 90% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 90
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 85%
+    #$ OPTION BEGIN (UNCHECKED): 85% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 85
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 80%
+    #$ OPTION BEGIN (UNCHECKED): 80% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 80
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 75%
+    #$ OPTION BEGIN (UNCHECKED): 75% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 75
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 70%
+    #$ OPTION BEGIN (UNCHECKED): 70% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 70
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 65%
+    #$ OPTION BEGIN (UNCHECKED): 65% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 65
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 60%
+    #$ OPTION BEGIN (UNCHECKED): 60% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 60
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 55%
+    #$ OPTION BEGIN (UNCHECKED): 55% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 55
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 50%
+    #$ OPTION BEGIN (UNCHECKED): 50% Throttle
         set throttle_limit_type = SCALE
         set throttle_limit_percent = 50
     #$ OPTION END
@@ -246,43 +246,43 @@ set ledstrip_profile = RACE
 #$ OPTION_GROUP END
 
 #$ OPTION_GROUP BEGIN: Choose ONE LED Brightness
-    #$ OPTION BEGIN (CHECKED): 100%
+    #$ OPTION BEGIN (CHECKED): 100% Bright
         set ledstrip_brightness = 100
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 90%
+    #$ OPTION BEGIN (UNCHECKED): 90% Bright
         set ledstrip_brightness = 90
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 80%
+    #$ OPTION BEGIN (UNCHECKED): 80% Bright
         set ledstrip_brightness = 80
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 70%
+    #$ OPTION BEGIN (UNCHECKED): 70% Bright
         set ledstrip_brightness = 70
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 60%
+    #$ OPTION BEGIN (UNCHECKED): 60% Bright
         set ledstrip_brightness = 60
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 50%
+    #$ OPTION BEGIN (UNCHECKED): 50% Bright
         set ledstrip_brightness = 50
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 40%
+    #$ OPTION BEGIN (UNCHECKED): 40% Bright
         set ledstrip_brightness = 40
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 30%
+    #$ OPTION BEGIN (UNCHECKED): 30% Bright
         set ledstrip_brightness = 30
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 20%
+    #$ OPTION BEGIN (UNCHECKED): 20% Bright
         set ledstrip_brightness = 20
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 10%
+    #$ OPTION BEGIN (UNCHECKED): 10% Bright
         set ledstrip_brightness = 10
     #$ OPTION END
 #$ OPTION_GROUP END
