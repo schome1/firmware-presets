@@ -1,4 +1,4 @@
-#$ TITLE: Schome1FPV - LED
+#$ TITLE: Schome1FPV - RACE LED
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: LEDS
 #$ STATUS: EXPERIMENTAL
@@ -10,6 +10,7 @@
 feature LED_STRIP
 
 set ledstrip_profile = RACE
+set ledstrip_race_color = LIME_GREEN
 #$ OPTION_GROUP BEGIN: Choose ONE LED Color
     #$ OPTION BEGIN (UNCHECKED): Black
         set ledstrip_race_color = BLACK
@@ -68,44 +69,45 @@ set ledstrip_profile = RACE
     #$ OPTION END
 #$ OPTION_GROUP END
 
+set ledstrip_brightness = 100
 #$ OPTION_GROUP BEGIN: Choose ONE LED Brightness
-    #$ OPTION BEGIN (CHECKED): 100%
+    #$ OPTION BEGIN (CHECKED): 100% Bright
         set ledstrip_brightness = 100
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 90%
+    #$ OPTION BEGIN (UNCHECKED): 90% Bright
         set ledstrip_brightness = 90
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 80%
+    #$ OPTION BEGIN (UNCHECKED): 80% Bright
         set ledstrip_brightness = 80
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 70%
+    #$ OPTION BEGIN (UNCHECKED): 70% Bright
         set ledstrip_brightness = 70
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 60%
+    #$ OPTION BEGIN (UNCHECKED): 60% Bright
         set ledstrip_brightness = 60
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 50%
+    #$ OPTION BEGIN (UNCHECKED): 50% Bright
         set ledstrip_brightness = 50
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 40%
+    #$ OPTION BEGIN (UNCHECKED): 40% Bright
         set ledstrip_brightness = 40
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 30%
+    #$ OPTION BEGIN (UNCHECKED): 30% Bright
         set ledstrip_brightness = 30
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 20%
+    #$ OPTION BEGIN (UNCHECKED): 20% Bright
         set ledstrip_brightness = 20
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 10%
+    #$ OPTION BEGIN (UNCHECKED): 10% Bright
         set ledstrip_brightness = 10
     #$ OPTION END
 #$ OPTION_GROUP END

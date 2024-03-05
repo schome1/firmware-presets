@@ -1,0 +1,125 @@
+#$ TITLE: Schome1FPV - UBR112LP TUNE
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: ubrlp, ubr112lp
+#$ AUTHOR: Schome1FPV (Mike Schommer)
+#$ DESCRIPTION: These are the presets specific to the UBR112LP drone.
+
+
+set bat_capacity = 300
+# osd capacity alarm = <battery capacity mah> * 0.70
+set osd_cap_alarm = 210
+#$ OPTION_GROUP BEGIN: Choose ONE Battery Capacity
+    #$ OPTION BEGIN (CHECKED): 300 mAh
+        set bat_capacity = 300
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 210
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 350 mAh
+        set bat_capacity = 350
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 245
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 380 mAh
+        set bat_capacity = 380
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 266
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 400 mAh
+        set bat_capacity = 400
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 280
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 450 mAh
+        set bat_capacity = 450
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 315
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 500 mAh
+        set bat_capacity = 500
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 350
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 525 mAh
+        set bat_capacity = 525
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 368
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 530 mAh
+        set bat_capacity = 530
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 371
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 550 mAh
+        set bat_capacity = 550
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 385
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 560 mAh
+        set bat_capacity = 560
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 392
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 650 mAh
+        set bat_capacity = 650
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 455
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 660 mAh
+        set bat_capacity = 660
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 462
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 700 mAh
+        set bat_capacity = 700
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 490
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 720 mAh
+        set bat_capacity = 720
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 504
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 850 mAh
+        set bat_capacity = 850
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 595
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 930 mAh
+        set bat_capacity = 930
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 651
+    #$ OPTION END
+#$ OPTION_GROUP END

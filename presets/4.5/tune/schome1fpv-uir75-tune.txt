@@ -6,7 +6,9 @@
 #$ AUTHOR: Schome1FPV (Mike Schommer)
 #$ DESCRIPTION: Presets for the UIR75 drone tune.
 
-# master
+# power and battery
+set vbat_scale  = 112
+set ibata_scale = 170
 
 
 
@@ -16,14 +18,33 @@ set dyn_idle_min_rpm = 95
 
 
 
+
 # thrust linear = (<esc pwm frequency> >= 96 ? 40 : (userValue <= 24 ? 0 : 20));
-set thrust_linear = 40;
+set thrust_linear = 20
+
+#$ OPTION_GROUP BEGIN: Choose ONE ESC PWM Frequency
+    #$ OPTION BEGIN (UNCHECKED): 24 Hz
+        set thrust_linear = 0
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 48 Hz
+        set thrust_linear = 20
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): 96 Hz
+        set thrust_linear = 40
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+
 
 set simplified_gyro_filter_multiplier = 60
 
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 set dshot_bidir = ON
+set rpm_filter_harmonics = 2
 
 set acc_lpf_hz = 10
 
@@ -36,8 +57,6 @@ set gyro_lpf1_dyn_min_hz = 150
 set gyro_lpf1_dyn_max_hz = 300
 
 set pid_process_denom = 4
-
-set rpm_filter_harmonics = 2
 
 set dterm_lpf1_dyn_min_hz = 90
 set dterm_lpf1_dyn_max_hz = 180
@@ -74,15 +93,38 @@ set simplified_dterm_filter_multiplier = 120
 
 
 
-# osd overrides
-set vbat_scale  = 112
-set ibata_scale = 170
-
-
-
-
 # these are set in my personal default presets - keeping them here in case I want to change where battery size is set
 # set bat_capacity = 300
 
 # - osd capacity alarm = <battery capacity mah> * 0.70
 # set osd_cap_alarm = 210
+
+#$ OPTION_GROUP BEGIN: Choose ONE Battery Capacity
+    #$ OPTION BEGIN (CHECKED): 300 mAh
+        set bat_capacity = 300
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 210
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 350 mAh
+        set bat_capacity = 350
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 245
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 380 mAh
+        set bat_capacity = 380
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 266
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 400 mAh
+        set bat_capacity = 400
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 280
+    #$ OPTION END    
+#$ OPTION_GROUP END

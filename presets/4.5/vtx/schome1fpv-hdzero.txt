@@ -40,56 +40,65 @@ set vtx_power = 3
 
 
 
+set vtx_band = 5
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Band
-    #$ OPTION BEGIN (UNCHECKED): A
+    #$ OPTION BEGIN (UNCHECKED): Band A
         set vtx_band = 1
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): B
+    #$ OPTION BEGIN (UNCHECKED): Band B
         set vtx_band = 2
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): E
+    #$ OPTION BEGIN (UNCHECKED): Band E
         set vtx_band = 3
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): F
+    #$ OPTION BEGIN (UNCHECKED): Band F
         set vtx_band = 4
     #$ OPTION END
-    #$ OPTION BEGIN (CHECKED): R
+    #$ OPTION BEGIN (CHECKED): Band R
         set vtx_band = 5
     #$ OPTION END
 #$ OPTION_GROUP END
 
 
 
-
+set vtx_channel = 1
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Channel
-    #$ OPTION BEGIN (CHECKED): 1
+    #$ OPTION BEGIN (CHECKED): Channel 1
         set vtx_channel = 1
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 2
+    #$ OPTION BEGIN (UNCHECKED): Channel 2
         set vtx_channel = 2
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 3
+    #$ OPTION BEGIN (UNCHECKED): Channel 3
         set vtx_channel = 3
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 4
+    #$ OPTION BEGIN (UNCHECKED): Channel 4
         set vtx_channel = 4
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 5
+    #$ OPTION BEGIN (UNCHECKED): Channel 5
         set vtx_channel = 5
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 6
+    #$ OPTION BEGIN (UNCHECKED): Channel 6
         set vtx_channel = 6
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 7
+    #$ OPTION BEGIN (UNCHECKED): Channel 7
         set vtx_channel = 7
     #$ OPTION END
-    #$ OPTION BEGIN (UNCHECKED): 8
+    #$ OPTION BEGIN (UNCHECKED): Channel 8
         set vtx_channel = 8
     #$ OPTION END
 #$ OPTION_GROUP END
 
 
 
+
+# - vtx power switch is at AUX 5
+vtx 0 4 0 0 3 900 1300
+vtx 1 4 0 0 1 1300 1700
+vtx 2 4 0 0 2 1700 2100
+
+# - rxfail uses AUX 5 (four sicks plus 5 aux ports = AUX 9 minus 1 = 8 ) <-- zero based index
+rxfail 8 s 1000        
 
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Power Channel
     #$ OPTION BEGIN (UNCHECKED): AUX 2

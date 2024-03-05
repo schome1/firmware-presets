@@ -514,6 +514,9 @@
       "twig",
       "tx5m.1",
       "tx800",
+      "ubr112lp",
+      "ubr128lp",
+      "ubrlp",
       "uir",
       "uir75",
       "ultra",
@@ -5329,8 +5332,8 @@
     },
     {
       "fullPath": "presets/4.5/leds/schome1fpv-led.txt",
-      "hash": "93d41dbe89fa06d644cd0dbdfc57ee0a1e9d9dca8e8c944b63c4177779f859c5",
-      "title": "Schome1FPV - LED",
+      "hash": "ec1bd385597f58cf1cd3cd21d9676441cb9170cc48d56274ea2b0050fa6226f7",
+      "title": "Schome1FPV - RACE LED",
       "firmware_version": [
         "4.5"
       ],
@@ -5340,6 +5343,21 @@
         "led",
         "race",
         "profile"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/osd/schome1fpv-osd.txt",
+      "hash": "36690a534912703615b990891ba2b2c54989ecb0607301df40d08da20c1b995f",
+      "title": "Schome1FPV - OSD",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OSD",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "schome1"
       ],
       "author": "Schome1FPV (Mike Schommer)",
       "priority": 0
@@ -5452,7 +5470,7 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-default-presets.txt",
-      "hash": "d18f59c6b3fc2b7ba12cc2131afa72ca5fb955e7bb389c749544188c059fa509",
+      "hash": "670cd1b95a57c3a009dcbea220ac17bd80137a9efda5b3611e2e9414bad27864",
       "title": "Schome1FPV - PERSONAL PRESETS",
       "firmware_version": [
         "4.5"
@@ -5533,9 +5551,24 @@
       "priority": 10000
     },
     {
+      "fullPath": "presets/4.5/rates/schome1fpv-rates.txt",
+      "hash": "03846f6fb1e850b23e048e4cf237dbfdb51d2eb199b44de2405d23856fb8b78b",
+      "title": "Schome1FPV - RATES",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "schome1"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/4.5/rc_link/schome1fpv-elrs-500hz-race.txt",
-      "hash": "48b81594a919fe0ed6ba9134c4f4071aa06988fd17f80d7d528d44ed99c9bdeb",
-      "title": "Schome1FPV - ExpressLRS 500hz Race",
+      "hash": "a03568be531bc232ef1b86023848bd70198b0cb7d64db57db04be032c5858685",
+      "title": "Schome1FPV - ExpressLRS 500hz",
       "firmware_version": [
         "4.5"
       ],
@@ -5989,8 +6022,40 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/tune/schome1fpv-ubr112lp-tune.txt",
+      "hash": "3f30f153fc9e5fba3e77605f5a40d6db036cbd5177b05cd65eb8c3eb07fcdb49",
+      "title": "Schome1FPV - UBR112LP TUNE",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "ubrlp",
+        "ubr112lp"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/schome1fpv-ubr128lp-tune.txt",
+      "hash": "62696d2c3accbd235bc97cd8b22933a2573d5a2c7b2e62e05c948453dc6a47e4",
+      "title": "Schome1FPV - UBR128LP Tune",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "ubrlp",
+        "ubr128lp"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.5/tune/schome1fpv-uir75-tune.txt",
-      "hash": "69114f5d4238e24bdebe905f74ab76fc68eca6e3189b45888a428d83c102fbe4",
+      "hash": "eea3288031137e9ca37722cac5080c3bc383982092f1de4497ae99b0e356cc44",
       "title": "Schome1FPV - UIR75 TUNE",
       "firmware_version": [
         "4.5"
@@ -6387,7 +6452,7 @@
     },
     {
       "fullPath": "presets/4.5/vtx/schome1fpv-hdzero.txt",
-      "hash": "04a561f92570a2955c34ce7eb7f44063f6a79c3261e2a08e22e81f6f3bd42b68",
+      "hash": "a41d271256170ddc9cce7e3beaa97ebe7a2e45942aee89877615c65f6de4ff61",
       "title": "Schome1FPV - HDZero",
       "firmware_version": [
         "4.5"
