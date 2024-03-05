@@ -67,17 +67,6 @@ set simplified_dmax_gain = 0
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 120
 
-#$ OPTION_GROUP BEGIN: Choose ONE
-    #$ OPTION BEGIN (CHECKED): ExpressLRS 500hz Race
-        set rc_smoothing_auto_factor = 25
-        set rc_smoothing_auto_factor_throttle = 25
-        set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 65
-        set feedforward_jitter_factor = 3
-        set feedforward_boost = 18
-    #$ OPTION END
-#$ OPTION_GROUP END    
-
 
 
 
