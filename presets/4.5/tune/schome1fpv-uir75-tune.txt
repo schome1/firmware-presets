@@ -9,8 +9,12 @@
 # master
 
 
+
+
 # dynamic idle = (15000 / <prop size in inches>) / 100)
 set dyn_idle_min_rpm = 95
+
+
 
 # thrust linear = (<esc pwm frequency> >= 96 ? 40 : (userValue <= 24 ? 0 : 20));
 set thrust_linear = 40;
