@@ -538,6 +538,7 @@ set osd_sys_vtx_temp_pos = 12576
 # - battery warnings and display
 set vbat_max_cell_voltage = 445
 set vbat_min_cell_voltage = 315
+set vbat_warning_cell_voltage = 330
 set report_cell_voltage = ON
 
 # osd

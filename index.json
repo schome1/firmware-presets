@@ -5452,7 +5452,7 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-default-presets.txt",
-      "hash": "192fae5fdd09eacd7ee8e4a0286953e83b87a04cac750c727bf99f06207866f0",
+      "hash": "63beda34b62cfe2c3e1dd751796b1fa79b50c0d3d4128e011b04956f06a5c9f0",
       "title": "Schome1FPV - PERSONAL PRESETS",
       "firmware_version": [
         "4.5"
@@ -5467,7 +5467,7 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-fc-flywoo-goku-versatile-f405.txt",
-      "hash": "b7539a3bcd2b862b2abb322222191e4a2d4f3b26ace05d4bc46f4919a11651e1",
+      "hash": "382b4f2976ffb1b49c75a7883f8651ca7e2ae9f8fa96e592e34e06c903e193ec",
       "title": "Schome1FPV - FLYWOOF405S_AIO",
       "firmware_version": [
         "4.5"

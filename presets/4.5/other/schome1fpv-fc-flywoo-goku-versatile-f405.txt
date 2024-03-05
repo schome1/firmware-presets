@@ -6,8 +6,19 @@
 #$ AUTHOR: Schome1FPV (Mike Schommer)
 #$ DESCRIPTION: Presets for the Flywoo GOKU Versatile F405 flight controller.
 
+
+
+
 # resources
+
+
+
+
 # timer
+
+
+
+
 # dma
 
 
@@ -15,89 +26,25 @@
 
 # feature
 
-feature RX_SERIAL
-feature MOTOR_STOP
-feature TELEMETRY
-feature LED_STRIP
-feature OSD
-feature ANTI_GRAVITY
-
 
 
 
 # serial
 
-#$ OPTION_GROUP BEGIN: RX UART (choose one)
-    #$ OPTION BEGIN (CHECKED): RX UART 1
-        serial 0 64 115200 57600 0 115200
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): RX UART 2
-        serial 1 64 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): RX UART 3
-        serial 2 64 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): RX UART 4
-        serial 3 64 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): RX UART 5
-        serial 4 64 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): RX UART 6
-        serial 5 64 115200 57600 0 115200
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-#$ OPTION_GROUP BEGIN: VTX UART
-    #$ OPTION BEGIN (UNCHECKED): VTX UART 1
-        serial 0 131073 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): VTX UART 2
-        serial 1 131073 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): VTX UART 3
-        serial 2 131073 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): VTX UART 4
-        serial 3 131073 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): VTX UART 5
-        serial 4 131073 115200 57600 0 115200
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (CHECKED): VTX UART 6
-        serial 5 131073 115200 57600 0 115200
-    #$ OPTION END
-#$ OPTION_GROUP END
-
 
 
 
 # mixer
-mixer QUADX
-
-mmix reset
 
 
 
 
 # beeper
-beeper -ALL
 
 
 
 
 # beacon
-beacon RX_SET
 
 
 
@@ -119,6 +66,10 @@ led 3 11,8::CB:1
 
 
 # color
+
+
+
+
 # mode_color
 
 
@@ -126,20 +77,29 @@ led 3 11,8::CB:1
 
 # aux
 
-# https://betaflight.com/docs/development/Modes
-aux 0 0 0 900 1500
-aux 1 35 1 1500 2100
-aux 2 28 2 1500 2100
-aux 3 1 3 1500 2100
-aux 4 26 5 1300 1700
-aux 5 31 5 1700 2100
-aux 6 13 6 1500 2100 1 0
-aux 7 13 0 1500 2100 1 0
+
+
 
 # adjrange
+
+
+
+
 # rxrange
+
+
+
+
 # vtxtable
+
+
+
+
 # vtx
+
+
+
+
 # rxfail
 
 
@@ -147,110 +107,12 @@ aux 7 13 0 1500 2100 1 0
 
 # master
 
-set beeper_dshot_beacon_tone = 5
-set ledstrip_profile = RACE
-#$ OPTION_GROUP BEGIN: Choose ONE LED Color
-    #$ OPTION BEGIN (UNCHECKED): Black
-        set ledstrip_race_color = BLACK
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (CHECKED): White
-        set ledstrip_race_color = WHITE
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Red
-        set ledstrip_race_color = RED
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Orange
-        set ledstrip_race_color = ORANGE
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Yellow
-        set ledstrip_race_color = YELLOW
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Lime Green
-        set ledstrip_race_color = LIME_GREEN
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Green
-        set ledstrip_race_color = GREEN
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Mint Green
-        set ledstrip_race_color = MINT_GREEN
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Cyan
-        set ledstrip_race_color = CYAN
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Light Blue
-        set ledstrip_race_color = LIGHT_BLUE
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Blue
-        set ledstrip_race_color = BLUE
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Dark Violet
-        set ledstrip_race_color = DARK_VIOLET
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Magenta
-        set ledstrip_race_color = MAGENTA
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Deep Pink
-        set ledstrip_race_color = DEEP_PINK
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-#$ OPTION_GROUP BEGIN: Choose ONE LED Brightness
-    #$ OPTION BEGIN (CHECKED): 100%
-        set ledstrip_brightness = 100
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 90%
-        set ledstrip_brightness = 90
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 80%
-        set ledstrip_brightness = 80
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 70%
-        set ledstrip_brightness = 70
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 60%
-        set ledstrip_brightness = 60
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 50%
-        set ledstrip_brightness = 50
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 40%
-        set ledstrip_brightness = 40
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 30%
-        set ledstrip_brightness = 30
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 20%
-        set ledstrip_brightness = 20
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 10%
-        set ledstrip_brightness = 10
-    #$ OPTION END
-#$ OPTION_GROUP END
-
 
 
 
 # profile 0
+
+
+
+
 # rateprofile 0
