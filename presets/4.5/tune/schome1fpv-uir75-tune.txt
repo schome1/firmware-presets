@@ -128,3 +128,10 @@ set simplified_dterm_filter_multiplier = 120
         set osd_cap_alarm = 280
     #$ OPTION END    
 #$ OPTION_GROUP END
+
+
+
+
+# barometer
+# - unused, disabled
+set baro_hardware = NONE
