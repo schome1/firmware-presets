@@ -27,11 +27,11 @@ set thrust_linear = 20
         set thrust_linear = 0
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): 48 Hz
+    #$ OPTION BEGIN (CHECKED): 48 Hz
         set thrust_linear = 20
     #$ OPTION END
     
-    #$ OPTION BEGIN (CHECKED): 96 Hz
+    #$ OPTION BEGIN (UNCHECKED): 96 Hz
         set thrust_linear = 40
     #$ OPTION END
 #$ OPTION_GROUP END
