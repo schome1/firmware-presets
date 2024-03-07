@@ -14,7 +14,8 @@ set ibata_scale = 170
 
 
 # dynamic idle = (15000 / <prop size in inches>) / 100)
-set dyn_idle_min_rpm = 95
+# - bluejay esc devs recommend to avoid using dynamic idle on 1S and 2S builds
+# set dyn_idle_min_rpm = 95
 
 
 

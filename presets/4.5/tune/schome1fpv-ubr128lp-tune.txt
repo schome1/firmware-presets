@@ -7,6 +7,24 @@
 #$ DESCRIPTION: These are the presets specific to the UBR128LP drone.
 
 
+
+# defaults
+# - dshot = DSHOT300
+# - motor stop = enabled
+# - bidirectional dshot = enabled
+# - motor poles = 12
+
+set dshot_bidir = ON
+set dshot_edt = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_idle_min_rpm = 60
+
+
+
+
 set bat_capacity = 300
 # osd capacity alarm = <battery capacity mah> * 0.70
 set osd_cap_alarm = 210
