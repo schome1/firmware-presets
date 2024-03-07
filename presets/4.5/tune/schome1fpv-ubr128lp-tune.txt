@@ -25,6 +25,31 @@ set dyn_idle_min_rpm = 60
 
 
 
+# thrust linear = (<esc pwm frequency> >= 96 ? 40 : (userValue <= 24 ? 0 : 20));
+set thrust_linear = 20
+
+#$ OPTION_GROUP BEGIN: Choose ONE ESC PWM Frequency
+    #$ OPTION BEGIN (UNCHECKED): 24 Hz
+        set thrust_linear = 0
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): 48 Hz
+        set thrust_linear = 20
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 96 Hz
+        set thrust_linear = 40
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+
+
+set vbat_sag_compensation = 100
+
+
+
+
 set bat_capacity = 300
 # osd capacity alarm = <battery capacity mah> * 0.70
 set osd_cap_alarm = 210
