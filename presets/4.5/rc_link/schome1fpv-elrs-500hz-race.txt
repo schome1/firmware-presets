@@ -14,7 +14,10 @@ set max_check = 2000
 
 set rc_smoothing_auto_factor = 25
 set rc_smoothing_auto_factor_throttle = 25
-set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 65
 set feedforward_jitter_factor = 3
+set feedforward_smooth_factor = 65
+set feedforward_averaging = 2_POINT
 set feedforward_boost = 18
+
+# 30 - 40 for racing, test for best feel
+set iterm_relax_cutoff = 30
