@@ -31,7 +31,7 @@ set osd_warn_bitmask = 50175
 set osd_stat_bitmask = 28554979
 set osd_rssi_dbm_alarm = -105
 
-et osd_vbat_pos = 395
+set osd_vbat_pos = 395
 set osd_rssi_pos = 194
 set osd_link_quality_pos = 12297
 set osd_rssi_dbm_pos = 14343
