@@ -6,6 +6,55 @@
 #$ AUTHOR: Schome1FPV (Mike Schommer)
 #$ DESCRIPTION: These are the presets specific to the UBR112LP drone.
 
+# defaults
+# - dshot = DSHOT300
+# - motor stop = enabled
+# - bidirectional dshot = enabled
+# - motor poles = 12
+# - disable gyro lowpass filter 1
+# - disable gyro lowpass filter 2
+# - disable dynamic notch filter
+
+
+set dshot_bidir = ON
+set dshot_edt = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set dyn_idle_min_rpm = 60
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 0
+set rpm_filter_weights = 100,0,25
+set rpm_filter_min_hz = 150
+set rpm_filter_fade_range_hz = 225
+
+
+
+
+# thrust linear = (<esc pwm frequency> >= 96 ? 40 : (userValue <= 24 ? 0 : 20));
+set thrust_linear = 20
+
+#$ OPTION_GROUP BEGIN: Choose ONE ESC PWM Frequency
+    #$ OPTION BEGIN (UNCHECKED): 24 Hz
+        set thrust_linear = 0
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): 48 Hz
+        set thrust_linear = 20
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 96 Hz
+        set thrust_linear = 40
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+
+
+
+set vbat_sag_compensation = 100
+
+
+
 
 set bat_capacity = 300
 # osd capacity alarm = <battery capacity mah> * 0.70
