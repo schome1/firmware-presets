@@ -30,7 +30,7 @@ set dyn_notch_count = 0
 set rpm_filter_weights = 100,0,25
 set rpm_filter_min_hz = 150
 set rpm_filter_fade_range_hz = 225
-
+set simplified_dterm_filter_multiplier = 200
 
 
 

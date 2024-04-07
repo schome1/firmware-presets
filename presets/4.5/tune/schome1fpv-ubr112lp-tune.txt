@@ -21,13 +21,14 @@ set dshot_edt = ON
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 set dyn_idle_min_rpm = 60
+set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 0
 set dyn_notch_count = 0
 set rpm_filter_weights = 100,0,25
 set rpm_filter_min_hz = 150
 set rpm_filter_fade_range_hz = 225
-
+set simplified_dterm_filter_multiplier = 200
 
 
 
