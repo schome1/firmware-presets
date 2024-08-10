@@ -5332,7 +5332,7 @@
     },
     {
       "fullPath": "presets/4.5/leds/schome1fpv-led.txt",
-      "hash": "ec1bd385597f58cf1cd3cd21d9676441cb9170cc48d56274ea2b0050fa6226f7",
+      "hash": "de9184dfe32950a0f0734104d91bfb454f4ccf619c8a9a94f0485acd9a1c8f63",
       "title": "Schome1FPV - RACE LED",
       "firmware_version": [
         "4.5"
@@ -5349,7 +5349,7 @@
     },
     {
       "fullPath": "presets/4.5/osd/schome1fpv-osd.txt",
-      "hash": "db31a5c72e2553a5acec699d006a3b372802763e31f28df1a5a14d1c9ea5ba6a",
+      "hash": "3e3b4d9b009dd40ad4ec3d235d1d26c2f1409fd6feb37e658250acd8620404bf",
       "title": "Schome1FPV - OSD",
       "firmware_version": [
         "4.5"
@@ -5470,7 +5470,7 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-default-presets.txt",
-      "hash": "4cbb5e044348df33fbd4cfec0dcd3b506a76eca455f5056afbc114115922d04d",
+      "hash": "ab52e4aa37bf517ededd927239ed19f0b0d53d1dd2b5ad0c58c8809be23058bf",
       "title": "Schome1FPV - PERSONAL PRESETS",
       "firmware_version": [
         "4.5"
@@ -5497,6 +5497,21 @@
         "goku",
         "versatile",
         "f405"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/schome1fpv-ubr128as-gn722-presets.txt",
+      "hash": "eeb761ef25ed2acefc5354efd87f5a8a5227f2f5d1d97f39b64721f3a653d44e",
+      "title": "Schome1FPV - UBR128-AS Build",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "schome1"
       ],
       "author": "Schome1FPV (Mike Schommer)",
       "priority": 0
@@ -5567,7 +5582,7 @@
     },
     {
       "fullPath": "presets/4.5/rc_link/schome1fpv-elrs-500hz-race.txt",
-      "hash": "a03568be531bc232ef1b86023848bd70198b0cb7d64db57db04be032c5858685",
+      "hash": "aa160804e149ba5e2f94e263f9f75f815fa207ffbe714ff96c8c5faa25cecea2",
       "title": "Schome1FPV - ExpressLRS 500hz",
       "firmware_version": [
         "4.5"
@@ -6023,7 +6038,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/schome1fpv-ubr112lp-tune.txt",
-      "hash": "3f30f153fc9e5fba3e77605f5a40d6db036cbd5177b05cd65eb8c3eb07fcdb49",
+      "hash": "b085184119d73189b15c405b64d852c4a0200ad167d3d738103785255b425d05",
       "title": "Schome1FPV - UBR112LP TUNE",
       "firmware_version": [
         "4.5"
@@ -6039,7 +6054,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/schome1fpv-ubr128lp-tune.txt",
-      "hash": "c35260519d53e65e77f42d3f1a38c404c6bca6f829e5064f478df9af1dd45f5c",
+      "hash": "118c75951aa691acc348db5625c8c8f8ef869811f01c24a81e832b61ae2151bd",
       "title": "Schome1FPV - UBR128LP Tune",
       "firmware_version": [
         "4.5"
@@ -6055,7 +6070,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/schome1fpv-uir75-tune.txt",
-      "hash": "aaf026ac19647175b7a182695876ac420348d8c6a734586ffbeecee4553f8437",
+      "hash": "bfb87da90857f525c10c2b561df3c449f08b6342fccf23eb291aa02e616113bd",
       "title": "Schome1FPV - UIR75 TUNE",
       "firmware_version": [
         "4.5"
