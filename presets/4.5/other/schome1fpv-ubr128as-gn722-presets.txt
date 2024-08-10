@@ -23,6 +23,9 @@ feature -RSSI_ADC
 feature MOTOR_STOP
 feature TELEMETRY
 
+# disable barometer (BMP280)
+set baro_hardware = NONE
+
 # mixer
 mixer QUADX
 mmix reset
@@ -194,7 +197,7 @@ set osd_vtx_channel_pos = 30734
 set osd_current_pos = 13323
 set osd_mah_drawn_pos = 15360
 set osd_craft_name_pos = 14883
-set osd_pilot_name_pos = 15912
+set osd_pilot_name_pos = 15909
 set osd_home_dist_pos = 98
 set osd_flight_dist_pos = 130
 set osd_power_pos = 1551
