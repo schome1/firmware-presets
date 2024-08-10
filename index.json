@@ -437,6 +437,7 @@
       "race rates ctzsnooze actual",
       "race v1",
       "race v2",
+      "race v3",
       "Race250",
       "Race500",
       "racing",
@@ -5503,7 +5504,7 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-ubr128as-gn722-presets.txt",
-      "hash": "eeb761ef25ed2acefc5354efd87f5a8a5227f2f5d1d97f39b64721f3a653d44e",
+      "hash": "51cbf2aef37a8be8c9d62542cb321981df1fae982aec317d060492029f1ef883",
       "title": "Schome1FPV - UBR128-AS Build",
       "firmware_version": [
         "4.5"
@@ -6467,7 +6468,7 @@
     },
     {
       "fullPath": "presets/4.5/vtx/schome1fpv-hdzero.txt",
-      "hash": "a41d271256170ddc9cce7e3beaa97ebe7a2e45942aee89877615c65f6de4ff61",
+      "hash": "45f53a507d9076deca53679d94b130e94d4ea1d940274458f12fd0842d14af79",
       "title": "Schome1FPV - HDZero",
       "firmware_version": [
         "4.5"
@@ -6477,7 +6478,8 @@
       "keywords": [
         "hdzero",
         "whoop",
-        "whoop lite"
+        "whoop lite",
+        "race v3"
       ],
       "author": "Schome1FPV (Mike Schommer)",
       "priority": 1000000

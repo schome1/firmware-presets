@@ -2,9 +2,9 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: VTX
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: hdzero, whoop, whoop lite
+#$ KEYWORDS: hdzero, whoop, whoop lite, race v3
 #$ AUTHOR: Schome1FPV (Mike Schommer)
-#$ DESCRIPTION: Presets for HDZero Whoop Lite VTX
+#$ DESCRIPTION: Presets for HDZero VTXs
 
 # vtxtable 
 # reset all
@@ -98,9 +98,30 @@ vtx 1 4 0 0 1 1300 1700
 vtx 2 4 0 0 2 1700 2100
 
 # - rxfail uses AUX 5 (four sicks plus 5 aux ports = AUX 9 minus 1 = 8 ) <-- zero based index
-rxfail 8 s 1000        
+rxfail 0 a        
+rxfail 1 a        
+rxfail 2 a        
+rxfail 3 a        
+rxfail 4 h
+rxfail 5 h
+rxfail 6 h
+rxfail 7 h
+rxfail 8 h
+rxfail 9 h
+rxfail 10 h
+rxfail 11 h
+rxfail 12 h
+rxfail 13 h
+rxfail 14 h
+rxfail 15 h
 
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Power Channel
+    #$ OPTION BEGIN (UNCHECKED): AUX 1
+        vtx 0 0 0 0 3 900 1300
+        vtx 1 0 0 0 1 1300 1700
+        vtx 2 0 0 0 2 1700 2100
+        rxfail 0 s 1000        
+    #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): AUX 2
         vtx 0 1 0 0 3 900 1300
         vtx 1 1 0 0 1 1300 1700

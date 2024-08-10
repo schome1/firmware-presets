@@ -121,7 +121,7 @@ beeper -ALL
 # - beacon
 # --- LEDs will do as indicated (see led section in each fc preset that I create) when the RX switch that is setup for this is triggered
 # --- Motors will ding at the designated tone when the RX switch that is setup for this is triggered
-#beacon RX_SET
+beacon -RX_SET
 
 # 1-5, with 5 being the easiest to hear
 set beeper_dshot_beacon_tone = 5
@@ -135,8 +135,10 @@ set beeper_dshot_beacon_tone = 5
 
 
 # led
-# - included
-
+led 0 6,7::CB:8
+led 1 7,7::CB:8
+led 2 8,7::CB:8
+led 3 9,7::CB:8
 
 
 # color
