@@ -14,6 +14,12 @@
 
 
 
+# master
+# set the gyro sensor alignment
+set gyro_1_sensor_align = CW0
+set gyro_1_align_pitch = 0
+set gyro_1_align_yaw = 0
+
 # resources
 
 
