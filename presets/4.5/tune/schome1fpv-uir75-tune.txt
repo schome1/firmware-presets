@@ -44,6 +44,7 @@ set simplified_gyro_filter_multiplier = 60
 set motor_pwm_protocol = DSHOT300
 set motor_poles = 12
 set dshot_bidir = ON
+set dshot_edt = ON
 set rpm_filter_harmonics = 2
 
 set acc_lpf_hz = 10

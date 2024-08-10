@@ -10,7 +10,7 @@
 feature LED_STRIP
 
 set ledstrip_profile = RACE
-set ledstrip_race_color = LIME_GREEN
+set ledstrip_race_color = WHITE
 #$ OPTION_GROUP BEGIN: Choose ONE LED Color
     #$ OPTION BEGIN (UNCHECKED): Black
         set ledstrip_race_color = BLACK

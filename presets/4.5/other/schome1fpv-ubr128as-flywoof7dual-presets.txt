@@ -1,10 +1,10 @@
-#$ TITLE: Schome1FPV - PERSONAL PRESETS
+#$ TITLE: Schome1FPV - UBR128-AS/GN722
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: schome1
 #$ AUTHOR: Schome1FPV (Mike Schommer)
-#$ DESCRIPTION: These are the presets that I use on all of my drones.
+#$ DESCRIPTION: This is for use on the Schome1FPV UBR128-AS frame with the Flywoo GOKU GN722 flight controller.
 #$ INCLUDE: presets/4.5/rates/schome1fpv-rates.txt
 #$ INCLUDE: presets/4.5/leds/schome1fpv-led.txt
 #$ INCLUDE: presets/4.5/osd/schome1fpv-osd.txt
