@@ -22,7 +22,6 @@ feature -AIRMODE
 feature -RSSI_ADC
 feature MOTOR_STOP
 feature TELEMETRY
-feature ANTI_GRAVITY
 
 # mixer
 mixer QUADX
@@ -53,12 +52,26 @@ set crash_recovery = OFF
     set crash_recovery = ON
 #$ OPTION END
 
-# motors
-# reversed (into the sides, out from the front/back)
-set yaw_motors_reversed = ON
-
 # - arm at any angle
 set small_angle = 180
+
+# failsafe defaults
+rxfail 0 a        
+rxfail 1 a        
+rxfail 2 a        
+rxfail 3 a        
+rxfail 4 h
+rxfail 5 h
+rxfail 6 h
+rxfail 7 h
+rxfail 8 h
+rxfail 9 h
+rxfail 10 h
+rxfail 11 h
+rxfail 12 h
+rxfail 13 h
+rxfail 14 h
+rxfail 15 h
 
 
 
@@ -416,6 +429,7 @@ set iterm_relax_cutoff = 30
 
 
 
+
 # --------------
 # - VTX PRESETS
 # --------------
@@ -518,30 +532,12 @@ set vtx_channel = 1
     #$ OPTION END
 #$ OPTION_GROUP END
 
-# - rxfail uses AUX 5 (four sicks plus 5 aux ports = AUX 9 minus 1 = 8 ) <-- zero based index
-rxfail 0 a        
-rxfail 1 a        
-rxfail 2 a        
-rxfail 3 a        
-rxfail 4 h
-rxfail 5 h
-rxfail 6 h
-rxfail 7 h
-rxfail 8 h
-rxfail 9 h
-rxfail 10 h
-rxfail 11 h
-rxfail 12 h
-rxfail 13 h
-rxfail 14 h
-rxfail 15 h
-
 #$ OPTION_GROUP BEGIN: Choose ONE VTX Power Channel
     #$ OPTION BEGIN (UNCHECKED): AUX 1
         vtx 0 0 0 0 3 900 1300
         vtx 1 0 0 0 1 1300 1700
         vtx 2 0 0 0 2 1700 2100
-        rxfail 0 s 1000        
+        rxfail 4 s 1000        
     #$ OPTION END
     #$ OPTION BEGIN (UNCHECKED): AUX 2
         vtx 0 1 0 0 3 900 1300
@@ -588,8 +584,6 @@ rxfail 15 h
 #$ OPTION_GROUP END
 
 
-
-
 # --------------
 # - AUX PRESETS
 # --------------
@@ -632,3 +626,212 @@ aux 5 31 5 1700 2100
 # - BEEPER is only enabled if not armed and beeper switch is engaged
 aux 6 13 6 1500 2100 1 0
 aux 7 13 0 1500 2100 1 0
+
+
+
+
+# ---------------------
+# - FILTER TUNE PRESETS
+# ---------------------
+
+set rpm_filter_fade_range_hz = 50
+set rpm_filter_weights = 100,100,100
+
+# dshot/motors/esc
+set dshot_edt = ON
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set yaw_motors_reversed = ON
+set pid_process_denom = 2
+
+# gyro lowpass 1
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_static_hz = 0
+
+# gyro lowpass 2
+set gyro_lpf2_static_hz = 1000
+
+# gyro notch filter 1
+set gyro_notch1_hz = 0
+
+# gyro notch filter 2
+set gyro_notch2_hz = 0
+
+# gyro rpm filter
+set rpm_filter_harmonics = 3
+set rpm_filter_min_hz = 100
+
+# dynamic notch filter
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 600
+
+# d term lowpass 1
+set dterm_lpf1_dyn_min_hz = 75
+set dterm_lpf1_dyn_max_hz = 150
+set dterm_lpf1_static_hz = 75
+
+# d term lowpass 2
+set dterm_lpf2_static_hz = 150
+
+# d term notch filter
+set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
+
+#yaw lowpass filter
+set yaw_lowpass_hz = 100
+
+# filter sliders
+set simplified_gyro_filter_multiplier = 200
+set simplified_dterm_filter_multiplier = 100
+
+
+
+
+# -------------------------
+# - PID CONTROLLER SETTINGS
+# -------------------------
+
+feature ANTI_GRAVITY
+
+set throttle_boost = 0
+
+set dyn_idle_min_rpm = 40
+
+set vbat_sag_compensation = 100
+
+# thrust linear = (<esc pwm frequency> >= 96 ? 40 : (userValue <= 24 ? 0 : 20));
+set thrust_linear = 20
+
+#$ OPTION_GROUP BEGIN: Choose ONE ESC PWM Frequency
+    #$ OPTION BEGIN (UNCHECKED): 24 Hz
+        set thrust_linear = 0
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (CHECKED): 48 Hz
+        set thrust_linear = 20
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 96 Hz
+        set thrust_linear = 40
+    #$ OPTION END
+#$ OPTION_GROUP END
+
+set bat_capacity = 720
+# osd capacity alarm = <battery capacity mah> * 0.70
+set osd_cap_alarm = 504
+#$ OPTION_GROUP BEGIN: Choose ONE Battery Capacity
+    #$ OPTION BEGIN (CHECKED): 300 mAh
+        set bat_capacity = 300
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 210
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 350 mAh
+        set bat_capacity = 350
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 245
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 380 mAh
+        set bat_capacity = 380
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 266
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 400 mAh
+        set bat_capacity = 400
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 280
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 450 mAh
+        set bat_capacity = 450
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 315
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): 500 mAh
+        set bat_capacity = 500
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 350
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 525 mAh
+        set bat_capacity = 525
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 368
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 530 mAh
+        set bat_capacity = 530
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 371
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 550 mAh
+        set bat_capacity = 550
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 385
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 560 mAh
+        set bat_capacity = 560
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 392
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 650 mAh
+        set bat_capacity = 650
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 455
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 660 mAh
+        set bat_capacity = 660
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 462
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 700 mAh
+        set bat_capacity = 700
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 490
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 720 mAh
+        set bat_capacity = 720
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 504
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 850 mAh
+        set bat_capacity = 850
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 595
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): 930 mAh
+        set bat_capacity = 930
+
+        # osd capacity alarm = <battery capacity mah> * 0.70
+        set osd_cap_alarm = 651
+    #$ OPTION END
+#$ OPTION_GROUP END
