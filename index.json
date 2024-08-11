@@ -228,7 +228,6 @@
       "3S",
       "4 inch",
       "4\"",
-      "40mm",
       "4in",
       "4S",
       "5 In",
@@ -323,7 +322,6 @@
       "EVO",
       "expert",
       "express",
-      "expresslrs",
       "Extreme",
       "f405",
       "feisar",
@@ -380,7 +378,6 @@
       "launch_mode",
       "LeadFingers",
       "League",
-      "led",
       "leds",
       "Limon",
       "link",
@@ -437,7 +434,6 @@
       "race rates ctzsnooze actual",
       "race v1",
       "race v2",
-      "race v3",
       "Race250",
       "Race500",
       "racing",
@@ -515,11 +511,9 @@
       "twig",
       "tx5m.1",
       "tx800",
-      "ubr112lp",
-      "ubr128lp",
-      "ubrlp",
-      "uir",
-      "uir75",
+      "ubr128",
+      "ubr128-as",
+      "ubr128as",
       "ultra",
       "ultra 1000",
       "ultralite",
@@ -5332,38 +5326,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/leds/schome1fpv-led.txt",
-      "hash": "de9184dfe32950a0f0734104d91bfb454f4ccf619c8a9a94f0485acd9a1c8f63",
-      "title": "Schome1FPV - RACE LED",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "LEDS",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "led",
-        "race",
-        "profile"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.5/osd/schome1fpv-osd.txt",
-      "hash": "3e3b4d9b009dd40ad4ec3d235d1d26c2f1409fd6feb37e658250acd8620404bf",
-      "title": "Schome1FPV - OSD",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "OSD",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "schome1"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/other/100-euro-fpv-tune.txt",
       "hash": "3f0256b75809d56d7ec528481ed302ac1d756c9c08bee71b41e213849924b953",
       "title": "100-EURO-FPV",
@@ -5470,21 +5432,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/other/schome1fpv-default-presets.txt",
-      "hash": "ab52e4aa37bf517ededd927239ed19f0b0d53d1dd2b5ad0c58c8809be23058bf",
-      "title": "Schome1FPV - PERSONAL PRESETS",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "OTHER",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "schome1"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.5/other/schome1fpv-fc-flywoo-goku-versatile-f405.txt",
       "hash": "f0c591838ace41983039a4a882237d4a49f12f3e9681ae7562217b3931267868",
       "title": "Schome1FPV - FLYWOOF405S_AIO",
@@ -5504,15 +5451,18 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-ubr128as-gn722-presets.txt",
-      "hash": "8aed9095d2ec24058ee39c24ad810bbb503cbcd656b8c9af7b91ea0e431b39f9",
-      "title": "Schome1FPV - UBR128-AS + GN722 AIO + ELRS 500HZ + HDZERO",
+      "hash": "e97ff7cc792ee6403a8f5193c0a9dfda6d34fb9d3ad63f392f67781baea6b9c2",
+      "title": "UBR128-AS | GN722 AIO | ELRS 500HZ | HDZERO",
       "firmware_version": [
         "4.5"
       ],
       "category": "OTHER",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "schome1"
+        "schome1",
+        "ubr128",
+        "ubr128-as",
+        "ubr128as"
       ],
       "author": "Schome1FPV (Mike Schommer)",
       "priority": 0
@@ -5565,40 +5515,6 @@
       ],
       "author": "ZoeFPV",
       "priority": 10000
-    },
-    {
-      "fullPath": "presets/4.5/rates/schome1fpv-rates.txt",
-      "hash": "03846f6fb1e850b23e048e4cf237dbfdb51d2eb199b44de2405d23856fb8b78b",
-      "title": "Schome1FPV - RATES",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "RATES",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "schome1"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 10000
-    },
-    {
-      "fullPath": "presets/4.5/rc_link/schome1fpv-elrs-500hz-race.txt",
-      "hash": "aa160804e149ba5e2f94e263f9f75f815fa207ffbe714ff96c8c5faa25cecea2",
-      "title": "Schome1FPV - ExpressLRS 500hz",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "RC_LINK",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "expresslrs",
-        "elrs",
-        "500hz",
-        "race",
-        "rc_smoothing"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 10000000000
     },
     {
       "fullPath": "presets/4.5/tune/Street_League_LeadFingers.txt",
@@ -6038,56 +5954,6 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.5/tune/schome1fpv-ubr112lp-tune.txt",
-      "hash": "b085184119d73189b15c405b64d852c4a0200ad167d3d738103785255b425d05",
-      "title": "Schome1FPV - UBR112LP TUNE",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "ubrlp",
-        "ubr112lp"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/schome1fpv-ubr128lp-tune.txt",
-      "hash": "118c75951aa691acc348db5625c8c8f8ef869811f01c24a81e832b61ae2151bd",
-      "title": "Schome1FPV - UBR128LP Tune",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "ubrlp",
-        "ubr128lp"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/schome1fpv-uir75-tune.txt",
-      "hash": "bfb87da90857f525c10c2b561df3c449f08b6342fccf23eb291aa02e616113bd",
-      "title": "Schome1FPV - UIR75 TUNE",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "uir",
-        "uir75",
-        "40mm",
-        "whoop"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
-      "priority": 1000000000000
-    },
-    {
       "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_3_4_Inch_EasyTune.txt",
       "hash": "a74e9b3e4d95ea46153973ab9ebff69804b9ec57a763ba7159be20b501cef229",
       "title": "SupaflyFPV Freestyle 3/4 Inch",
@@ -6464,24 +6330,6 @@
       ],
       "author": "sugarK",
       "force_options_review": true,
-      "priority": 1000000
-    },
-    {
-      "fullPath": "presets/4.5/vtx/schome1fpv-hdzero.txt",
-      "hash": "45f53a507d9076deca53679d94b130e94d4ea1d940274458f12fd0842d14af79",
-      "title": "Schome1FPV - HDZero",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "VTX",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "hdzero",
-        "whoop",
-        "whoop lite",
-        "race v3"
-      ],
-      "author": "Schome1FPV (Mike Schommer)",
       "priority": 1000000
     }
   ]
