@@ -1,10 +1,10 @@
-#$ TITLE: UBR128-AS | GN722 AIO | ELRS 500HZ | HDZERO
+#$ TITLE: UBR128-AL | GN722 AIO | ELRS 500HZ | HDZERO
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: schome1,ubr128,ubr128-as,ubr128as
 #$ AUTHOR: Schome1FPV (Mike Schommer)
-#$ DESCRIPTION: Presets for the Schome1FPV UBR128-AS frame with the Flywoo GOKU GN722 EVO HD flight controller, 500 Hz Express LRS RX, and HDZero VTXs.
+#$ DESCRIPTION: Presets for the Schome1FPV UBR128-AL frame with the Flywoo GOKU GN722 EVO HD flight controller, 500 Hz Express LRS RX, and HDZero VTXs.
 
 
 

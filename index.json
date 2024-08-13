@@ -6492,9 +6492,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.5/other/schome1fpv-ubr128as-gn722-presets.txt",
-      "hash": "e97ff7cc792ee6403a8f5193c0a9dfda6d34fb9d3ad63f392f67781baea6b9c2",
-      "title": "UBR128-AS | GN722 AIO | ELRS 500HZ | HDZERO",
+      "fullPath": "presets/4.5/other/schome1fpv-ubr128al-gn722-presets.txt",
+      "hash": "2d9baa5c93ae3d87d3121402a5981f87c283b5db2a045ba63ce1d66b19a45e80",
+      "title": "UBR128-AL | GN722 AIO | ELRS 500HZ | HDZERO",
       "firmware_version": [
         "4.5"
       ],
