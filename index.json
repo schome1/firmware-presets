@@ -557,8 +557,10 @@
       "tx800",
       "tyrant",
       "ubr128",
-      "ubr128-as",
-      "ubr128as",
+      "ubr128-al",
+      "ubr128-aw",
+      "ubr128al",
+      "ubr128aw",
       "ul5",
       "ul7",
       "ultra",
@@ -6493,7 +6495,7 @@
     },
     {
       "fullPath": "presets/4.5/other/schome1fpv-ubr128al-gn722-presets.txt",
-      "hash": "2d9baa5c93ae3d87d3121402a5981f87c283b5db2a045ba63ce1d66b19a45e80",
+      "hash": "b3799d1eff2830c53a77d5683dd68535ac2e1905a2f50ccf36e3efa1bb08143c",
       "title": "UBR128-AL | GN722 AIO | ELRS 500HZ | HDZERO",
       "firmware_version": [
         "4.5"
@@ -6503,8 +6505,26 @@
       "keywords": [
         "schome1",
         "ubr128",
-        "ubr128-as",
-        "ubr128as"
+        "ubr128-al",
+        "ubr128al"
+      ],
+      "author": "Schome1FPV (Mike Schommer)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/schome1fpv-ubr128aw-tunercf405-presets.txt",
+      "hash": "765f39fc64ab629936dc1ac57cec4c91fbb885f2b3465f599442939c4ae3ba84",
+      "title": "UBR128-AW | TUNERCF405 AIO | ELRS 500HZ | HDZERO",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "schome1",
+        "ubr128",
+        "ubr128-aw",
+        "ubr128aw"
       ],
       "author": "Schome1FPV (Mike Schommer)",
       "priority": 0

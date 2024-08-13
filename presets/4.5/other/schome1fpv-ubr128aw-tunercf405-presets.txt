@@ -1,10 +1,10 @@
-#$ TITLE: UBR128-AL | GN722 AIO | ELRS 500HZ | HDZERO
+#$ TITLE: UBR128-AW | TUNERCF405 AIO | ELRS 500HZ | HDZERO
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: OTHER
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: schome1,ubr128,ubr128-al,ubr128al
+#$ KEYWORDS: schome1,ubr128,ubr128-aw,ubr128aw
 #$ AUTHOR: Schome1FPV (Mike Schommer)
-#$ DESCRIPTION: Presets for the Schome1FPV UBR128-AL frame with the Flywoo GOKU GN722 EVO HD flight controller, 500 Hz Express LRS RX, and HDZero VTXs.
+#$ DESCRIPTION: Presets for the Schome1FPV UBR128-AW frame with the TuneRC Poly F405 AIO flight controller, 500 Hz Express LRS RX, and HDZero VTXs.
 
 
 
@@ -44,7 +44,7 @@
         serial 0 131073 115200 57600 0 115200
     #$ OPTION END
     
-    #$ OPTION BEGIN (UNCHECKED): VTX UART 2
+    #$ OPTION BEGIN (CHECKED): VTX UART 2
         serial 1 131073 115200 57600 0 115200
     #$ OPTION END
     
@@ -56,7 +56,7 @@
         serial 3 131073 115200 57600 0 115200
     #$ OPTION END
     
-    #$ OPTION BEGIN (CHECKED): VTX UART 5
+    #$ OPTION BEGIN (UNCHECKED): VTX UART 5
         serial 4 131073 115200 57600 0 115200
     #$ OPTION END
     
@@ -73,7 +73,7 @@
 # -----------------------------
 
 # PID loop frequency
-#set pid_process_denom = 2
+#set pid_process_denom = 1
 
 # disable barometer (BMP280)
 set baro_hardware = NONE
@@ -86,11 +86,12 @@ set small_angle = 180
 
 # features
 feature -AIRMODE
+feature OSD
 
 # board and sensor alignment
-set gyro_1_sensor_align = CW0
-set gyro_1_align_pitch = 0
-set gyro_1_align_yaw = 0
+#set gyro_1_sensor_align = CW0
+#set gyro_1_align_pitch = 0
+#set gyro_1_align_yaw = 0
 
 # beacon tone: 1-5, with 5 being the easiest to hear
 set beeper_dshot_beacon_tone = 5
@@ -232,8 +233,8 @@ set osd_cap_alarm = 504
     #$ OPTION END
 #$ OPTION_GROUP END
 
-set vbat_scale = 110
-set ibata_scale = 170
+set vbat_scale = 111
+set ibata_scale = 665
 
 set report_cell_voltage = ON
 
@@ -271,10 +272,10 @@ rxfail 15 h
 
 # - PID PROFILE SETTINGS
 
-set simplified_i_gain = 100
-set simplified_pi_gain = 00
-set simplified_feedforward_gain = 100
-set simplified_master_multiplier = 100
+set simplified_i_gain = 160
+set simplified_pi_gain = 95
+set simplified_feedforward_gain = 150
+set simplified_master_multiplier = 140
 
 set feedforward_jitter_factor = 3
 set feedforward_smooth_factor = 65
@@ -284,7 +285,7 @@ set feedforward_boost = 18
 # 30 - 40 for racing, test for best feel
 set iterm_relax_cutoff = 30
 
-feature ANTI_GRAVITY
+feature -ANTI_GRAVITY
 
 set throttle_boost = 0
 
@@ -293,7 +294,7 @@ set dyn_idle_min_rpm = 40
 set vbat_sag_compensation = 100
 
 # thrust linear = (<esc pwm frequency> >= 96 ? 40 : (userValue <= 24 ? 0 : 20));
-set thrust_linear = 20
+set thrust_linear = 30
 
 #$ OPTION_GROUP BEGIN: Choose ONE ESC PWM Frequency
     #$ OPTION BEGIN (UNCHECKED): 24 Hz
@@ -309,9 +310,9 @@ set thrust_linear = 20
     #$ OPTION END
 #$ OPTION_GROUP END
 
-#set tpa_rate = 30
-#set tpa_breakpoint = 1500
-#set tpa_low_rate = 65
+set tpa_rate = 30
+set tpa_breakpoint = 1500
+set tpa_low_rate = 65
 
 
 # - RATEPROFILE SETTINGS
@@ -392,7 +393,7 @@ set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_static_hz = 0
 
 # gyro lowpass 2
-set gyro_lpf2_static_hz = 1000
+set gyro_lpf2_static_hz = 0
 
 # gyro notch filter 1
 set gyro_notch1_hz = 0
@@ -413,12 +414,12 @@ set dyn_notch_max_hz = 600
 # d term lowpass 1
 set dterm_lpf1_dyn_min_hz = 75
 set dterm_lpf1_dyn_max_hz = 150
-set dterm_lpf1_static_hz = 75
-set dterm_lpf1_type = PT1
+set dterm_lpf1_static_hz = 0
+set dterm_lpf1_type = PT2
 
 # d term lowpass 2
 set dterm_lpf2_static_hz = 150
-set dterm_lpf2_type = PT1
+set dterm_lpf2_type = PT2
 
 # d term notch filter
 set dterm_notch_hz = 0
@@ -518,8 +519,6 @@ set motor_poles = 12
 # -----------------------------
 # - OSD
 # -----------------------------
-
-feature OSD
 
 # osd
 set osd_displayport_device = MSP
@@ -752,115 +751,7 @@ set vtx_channel = 1
 # - LED STRIP
 # -----------------------------
 
-feature LED_STRIP
-
-led 0 6,7::CB:8
-led 1 7,7::CB:8
-led 2 8,7::CB:8
-led 3 9,7::CB:8
-
-set ledstrip_profile = RACE
-set ledstrip_race_color = WHITE
-#$ OPTION_GROUP BEGIN: Choose ONE LED Color
-    #$ OPTION BEGIN (UNCHECKED): Black
-        set ledstrip_race_color = BLACK
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (CHECKED): White
-        set ledstrip_race_color = WHITE
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Red
-        set ledstrip_race_color = RED
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Orange
-        set ledstrip_race_color = ORANGE
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Yellow
-        set ledstrip_race_color = YELLOW
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Lime Green
-        set ledstrip_race_color = LIME_GREEN
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Green
-        set ledstrip_race_color = GREEN
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Mint Green
-        set ledstrip_race_color = MINT_GREEN
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Cyan
-        set ledstrip_race_color = CYAN
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Light Blue
-        set ledstrip_race_color = LIGHT_BLUE
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Blue
-        set ledstrip_race_color = BLUE
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Dark Violet
-        set ledstrip_race_color = DARK_VIOLET
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Magenta
-        set ledstrip_race_color = MAGENTA
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): Deep Pink
-        set ledstrip_race_color = DEEP_PINK
-    #$ OPTION END
-#$ OPTION_GROUP END
-
-set ledstrip_brightness = 100
-#$ OPTION_GROUP BEGIN: Choose ONE LED Brightness
-    #$ OPTION BEGIN (CHECKED): 100% Bright
-        set ledstrip_brightness = 100
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 90% Bright
-        set ledstrip_brightness = 90
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 80% Bright
-        set ledstrip_brightness = 80
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 70% Bright
-        set ledstrip_brightness = 70
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 60% Bright
-        set ledstrip_brightness = 60
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 50% Bright
-        set ledstrip_brightness = 50
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 40% Bright
-        set ledstrip_brightness = 40
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 30% Bright
-        set ledstrip_brightness = 30
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 20% Bright
-        set ledstrip_brightness = 20
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): 10% Bright
-        set ledstrip_brightness = 10
-    #$ OPTION END
-#$ OPTION_GROUP END
+feature -LED_STRIP
 
 
 
@@ -892,7 +783,7 @@ set dshot_edt = ON
 
 # filter
 set rpm_filter_fade_range_hz = 50
-set rpm_filter_weights = 100,100,100
+set rpm_filter_weights = 100,50,25
 
 # pid
 set pidsum_limit = 1000
